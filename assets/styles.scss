@@ -1,0 +1,43 @@
+/* Variables */
+
+// Colour Variables
+$primary: orange;
+$primary-muted: orange dark;
+$secondary: lightblue;
+$secondary-muted: orange dark;
+$accent: green;
+$link: green/yellow;
+$background: rgb(231, 231, 227);
+$muted-background: ;
+
+// Font Variables
+$font-stack-title: ;
+$font-stack-main: ;
+$font-stack-quote: ;
+
+$font-primary: $primary-muted;
+$font-secondary: ;
+
+/* Mixins */
+@mixin primary {
+    background-color: $primary;
+    color: 
+    font: $primary;
+    font-family: 
+}
+
+/* use like
+
+.thing-to-style { @include primary }
+
+can  also do --- MAYBE use this to choose seconadry, or priamry, though it may not work because of variable accessing syntax??
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+      -ms-transform: $property;
+          transform: $property;
+}
+
+.box { @include transform(rotate(30deg)); }  
+
+*/

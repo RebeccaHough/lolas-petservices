@@ -1,0 +1,31 @@
+#header {
+    margin-bottom: 0;
+    height: 50vw;
+    background: url(../assets/images/lola_beach.jpg) no-repeat center calc(38%) fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+#googleMaps {
+    height: 400px;
+    padding: 0;
+}
+#footer {
+    height: 250px;
+    margin-bottom: 0;
+}
+
+
+.navbar .sticky-top > div {
+    /*todo clear below content*/
+}
+
+@media (max-width: 576px) {
+    #header {display: none}
+}
+/* TODO doesn't work */
+@media (min-height: 550px) {
+    #header {height: 550px}
+}
