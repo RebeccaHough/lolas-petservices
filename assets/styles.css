@@ -16,7 +16,9 @@
     height: 250px;
     margin-bottom: 0;
 }
-
+#instagramFeed {
+    max-width: 1000px;
+}
 
 .navbar .sticky-top > div {
     /*todo clear below content*/
