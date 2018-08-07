@@ -1,3 +1,5 @@
+/* IDs */
+/* General */
 #header {
     margin-bottom: 0;
     height: 50vw;
@@ -28,21 +30,29 @@
     padding: 0;
 }
 #mainNav .nav-link#nav-brand > img {
-    height: 60px; /*temporary*
+    height: 60px; /*temporary*/
 }
 #mainNav + div {
     /*TODO clear below content*/
     /*padding-top: 50px;*/
-}
-#googleMaps {
-    height: 400px;
-    padding: 0;
 }
 #footer {
     height: 250px;
     margin-bottom: 0;
 }
 
+/*** Page specific IDs ***/
+/* Gallery */
+#instagramFeed {
+    max-width: 1000px;
+}
+/* Location */
+#googleMaps {
+    height: 400px;
+    padding: 0;
+}
+
+/* Classes */
 .bg-grey {
     background-color: #f6f6f6;
 }
@@ -61,6 +71,7 @@
     margin-left: .25rem;
 }
 
+/* Media Queries */
 @media (max-width: 576px) {
     #header {display: none}
 }
