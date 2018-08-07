@@ -7,6 +7,32 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; 
+
+    border-bottom: 7px black solid;
+}
+#mainNav {
+    padding: 0;
+    background-color: #ffffff; 
+}
+#mainNav .navbar-left {
+    padding: .5rem;
+}
+#mainNav .nav-link:not(#nav-brand) {
+    padding: .75rem;
+    text-transform: uppercase;
+}
+#mainNav .active {
+    border-bottom: 3px black solid;
+}
+#mainNav .nav-link#nav-brand {
+    padding: 0;
+}
+#mainNav .nav-link#nav-brand > img {
+    height: 60px; /*temporary*
+}
+#mainNav + div {
+    /*TODO clear below content*/
+    /*padding-top: 50px;*/
 }
 #googleMaps {
     height: 400px;
@@ -17,9 +43,22 @@
     margin-bottom: 0;
 }
 
-
-.navbar .sticky-top > div {
-    /*todo clear below content*/
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.bg-white {
+    background-color: #fff;
+}
+.text-container {
+    padding: 60px 50px;
+}
+.dot {
+    height: .75rem;
+    width: .75rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: .25rem;
 }
 
 @media (max-width: 576px) {
