@@ -1,30 +1,44 @@
 /* Variables */
 
 // Colour Variables
+$orange: orange;
+$green: green;
+$yellow: yellow;
+
 $primary: orange;
 $primary-muted: orange dark;
+
 $secondary: lightblue;
 $secondary-muted: orange dark;
-$accent: green;
-$link: green/yellow;
-$background: rgb(231, 231, 227);
-$muted-background: ;
+
+//may combine with secondary
+// $accent: green;
+// $link: green/yellow;
+
+// $background: rgb(231, 231, 227);
+// $muted-background: ;
+
+// $white
+// $black
+// $grey
+// $light-grey
+// $dark-grey
 
 // Font Variables
-$font-stack-title: ;
-$font-stack-main: ;
-$font-stack-quote: ;
+// $font-stack-title: ;
+// $font-stack-main: ;
+// $font-stack-quote: ;
 
-$font-primary: $primary-muted;
-$font-secondary: ;
+// $font-primary: $primary-muted;
+// $font-secondary: ;
 
 /* Mixins */
-@mixin primary {
-    background-color: $primary;
-    color: 
-    font: $primary;
-    font-family: 
-}
+// @mixin primary {
+//     background-color: $primary;
+//     color: 
+//     font: $primary;
+//     font-family: 
+// }
 
 /* use like
 

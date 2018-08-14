@@ -1,14 +1,16 @@
-/* IDs */
+@import 'variables.scss';
+
+/*** IDs ***/
 /* General */
 #header {
     margin-bottom: 0;
     height: 50vw;
-    background: url(../assets/images/lola_beach.jpg) no-repeat center calc(38%) fixed;
+    background: url(../../assets/images/lola_beach.jpg) no-repeat center calc(38%) fixed;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; 
+    background-size: cover;
 
     border-bottom: 7px black solid;
 }
@@ -24,7 +26,7 @@
     text-transform: uppercase;
 }
 #mainNav .active {
-    border-bottom: 3px black solid;
+    border-bottom: 3px solid;
 }
 #mainNav .nav-link#nav-brand {
     padding: 0;
@@ -41,7 +43,7 @@
     margin-bottom: 0;
 }
 
-/*** Page specific IDs ***/
+/* Page specific IDs */
 /* Gallery */
 #instagramFeed {
     max-width: 1000px;
@@ -52,7 +54,7 @@
     padding: 0;
 }
 
-/* Classes */
+/*** Classes ***/
 .bg-grey {
     background-color: #f6f6f6;
 }
@@ -69,6 +71,26 @@
     border-radius: 50%;
     display: inline-block;
     margin-left: .25rem;
+}
+
+/* Colour classes */
+.orange {
+    border-color: $orange !important;
+    .dot {
+        background-color: $orange;
+    }
+}
+.yellow {
+    border-color: $yellow !important;
+    .dot {
+        background-color: $yellow;
+    }
+}
+.green {
+    border-color: $green !important;
+    .dot {
+        background-color: $green;
+    }
 }
 
 /* Media Queries */
