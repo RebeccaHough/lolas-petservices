@@ -42,15 +42,8 @@
     /*padding-top: 50px;*/
 }
 #footer {
-    margin-bottom: 0; /* Makes no gap between bottom of footer and webpage end */
-    height: 250px;
     margin-bottom: 0;
-    /* padding-bottom: 0; */
     background-color: #4DBEC6;
-}
-
-.lola-img {
-    max-height: 180px;
 }
 
 /* Page specific IDs */
@@ -65,6 +58,10 @@
 }
 
 /*** Classes ***/
+.footer-img {
+    max-height: 170px;
+}
+
 .bg-grey {
     background-color: #f6f6f6;
 }

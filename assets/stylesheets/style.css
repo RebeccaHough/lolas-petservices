@@ -18,19 +18,22 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 /*** IDs ***/
 /* General */
 #header {
-  margin-bottom: 0;
   height: 50vw;
-  background: url(../../assets/images/lola_beach.jpg) no-repeat center calc(38%) fixed;
+  margin-bottom: 0;
+  border-bottom: 7px black solid;
+  background-image: url(../images/lola_beach.jpg);
+  background-repeat: no-repeat;
+  background-position: center calc(38%);
+  background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-bottom: 7px black solid;
 }
 
 #mainNav {
   padding: 0;
-  background-color: #ffffff;
+  background-color: #4DBEC6;
 }
 
 #mainNav .navbar-left {
@@ -61,8 +64,8 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 #footer {
-  height: 250px;
   margin-bottom: 0;
+  background-color: #4DBEC6;
 }
 
 /* Page specific IDs */
@@ -78,6 +81,10 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 /*** Classes ***/
+.footer-img {
+  max-height: 170px;
+}
+
 .bg-grey {
   background-color: #f6f6f6;
 }
@@ -122,7 +129,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 /* Media Queries */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #header {
     display: none;
   }
