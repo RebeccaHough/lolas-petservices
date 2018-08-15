@@ -23,12 +23,12 @@
     .navbar-left {
         padding: .5rem;
     }
+    .active, .nav-item:not(#nav-brand-item):hover {
+        border-bottom: 3px solid;
+    }
     .nav-link:not(#nav-brand) {
         padding: .75rem;
         text-transform: uppercase;
-    }
-    .active {
-        border-bottom: 3px solid;
     }
     .nav-link {
         color: $light-grey;
