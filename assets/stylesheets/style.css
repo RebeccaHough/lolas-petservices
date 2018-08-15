@@ -20,7 +20,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 #header {
   height: 50vw;
   margin-bottom: 0;
-  border-bottom: 7px black solid;
+  border-bottom: 7px #4dbec6 solid;
   background-image: url(../images/lola_beach.jpg);
   background-repeat: no-repeat;
   background-position: center calc(38%);
@@ -33,31 +33,28 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 
 #mainNav {
   padding: 0;
-  background-color: #4DBEC6;
+  background-color: #4dbec6;
 }
-
 #mainNav .navbar-left {
   padding: 0.5rem;
 }
-
 #mainNav .nav-link:not(#nav-brand) {
   padding: 0.75rem;
   text-transform: uppercase;
 }
-
 #mainNav .active {
   border-bottom: 3px solid;
 }
-
+#mainNav .nav-link {
+  color: #f6f6f6;
+}
 #mainNav .nav-link#nav-brand {
   padding: 0;
 }
-
 #mainNav .nav-link#nav-brand > img {
   height: 60px;
   /*temporary*/
 }
-
 #mainNav + div {
   /*TODO clear below content*/
   /*padding-top: 50px;*/
@@ -65,7 +62,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 
 #footer {
   margin-bottom: 0;
-  background-color: #4DBEC6;
+  background-color: #4dbec6;
 }
 
 /* Page specific IDs */
@@ -90,7 +87,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 .bg-white {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .text-container {
@@ -100,7 +97,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 .dot {
   height: 0.75rem;
   width: 0.75rem;
-  background-color: #bbb;
+  background-color: #bbbbbb;
   border-radius: 50%;
   display: inline-block;
   margin-left: 0.25rem;
@@ -108,24 +105,24 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 
 /* Colour classes */
 .orange {
-  border-color: orange !important;
+  border-color: #ec9137 !important;
 }
 .orange .dot {
-  background-color: orange;
+  background-color: #ec9137;
 }
 
 .yellow {
-  border-color: yellow !important;
+  border-color: #eec45e !important;
 }
 .yellow .dot {
-  background-color: yellow;
+  background-color: #eec45e;
 }
 
 .green {
-  border-color: green !important;
+  border-color: #71da47 !important;
 }
 .green .dot {
-  background-color: green;
+  background-color: #71da47;
 }
 
 /* Media Queries */

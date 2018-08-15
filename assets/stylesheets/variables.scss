@@ -1,12 +1,16 @@
 /* Variables */
 
 // Colour Variables
-$orange: orange;
-$green: green;
-$yellow: yellow;
+$orange: #ec9137;
+$green: #71da47;
+$yellow: #eec45e;
+//$yellow: #E4C88F;
 
-$primary: orange;
-$primary-muted: orange dark;
+$primary: #4dbec6;
+$primary-muted: #50b8aa;
+// $primary-muted: #4D81C6;
+// $primary-muted: #365463;
+// $primary-muted: #5193A0;
 
 $secondary: lightblue;
 $secondary-muted: orange dark;
@@ -18,10 +22,10 @@ $secondary-muted: orange dark;
 // $background: rgb(231, 231, 227);
 // $muted-background: ;
 
-// $white
-// $black
-// $grey
-// $light-grey
+$white: #ffffff;
+$black: #000000;
+$grey: #bbbbbb;
+$light-grey: #f6f6f6;
 // $dark-grey
 
 // Font Variables

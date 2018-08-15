@@ -5,7 +5,7 @@
 #header {
     height: 50vw;
     margin-bottom: 0;
-    border-bottom: 7px black solid;
+    border-bottom: 7px $primary solid;
 
     background-image: url(../images/lola_beach.jpg);
     background-repeat: no-repeat;
@@ -19,31 +19,34 @@
 }
 #mainNav {
     padding: 0;
-    background-color: #4DBEC6;
-}
-#mainNav .navbar-left {
-    padding: .5rem;
-}
-#mainNav .nav-link:not(#nav-brand) {
-    padding: .75rem;
-    text-transform: uppercase;
-}
-#mainNav .active {
-    border-bottom: 3px solid;
-}
-#mainNav .nav-link#nav-brand {
-    padding: 0;
-}
-#mainNav .nav-link#nav-brand > img {
-    height: 60px; /*temporary*/
-}
-#mainNav + div {
-    /*TODO clear below content*/
-    /*padding-top: 50px;*/
+    background-color: $primary;
+    .navbar-left {
+        padding: .5rem;
+    }
+    .nav-link:not(#nav-brand) {
+        padding: .75rem;
+        text-transform: uppercase;
+    }
+    .active {
+        border-bottom: 3px solid;
+    }
+    .nav-link {
+        color: $light-grey;
+    }
+    .nav-link#nav-brand {
+        padding: 0;
+    }
+    .nav-link#nav-brand > img {
+        height: 60px; /*temporary*/
+    }
+    + div {
+        /*TODO clear below content*/
+        /*padding-top: 50px;*/
+    }
 }
 #footer {
     margin-bottom: 0;
-    background-color: #4DBEC6;
+    background-color: $primary;
 }
 
 /* Page specific IDs */
@@ -61,12 +64,11 @@
 .footer-img {
     max-height: 170px;
 }
-
 .bg-grey {
-    background-color: #f6f6f6;
+    background-color: $light-grey;
 }
 .bg-white {
-    background-color: #fff;
+    background-color: $white;
 }
 .text-container {
     padding: 60px 50px;
@@ -74,7 +76,7 @@
 .dot {
     height: .75rem;
     width: .75rem;
-    background-color: #bbb;
+    background-color: $grey;
     border-radius: 50%;
     display: inline-block;
     margin-left: .25rem;
