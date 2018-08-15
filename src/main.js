@@ -1,4 +1,5 @@
 $('document').ready(function() {
+    //make dropdown open on hover
     $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
         var dropdown = $(e.target).closest('.dropdown');
         var menu = $('.dropdown-menu', dropdown);
@@ -10,8 +11,29 @@ $('document').ready(function() {
         });
     });
 
+    //parallax scroll header
     // $('.my-parallax-window').parallax({
     //     speed: -0.2,
     //     imageSrc: '../assets/images/lola_beach.jpg'
     // });
+
+    //turn navbar's background blue after scrolling past header
+    $(function(){
+        $(window).scroll(function() {
+            //number of pixels scrolled
+            var scroll = $(window).scrollTop();
+            //pixels to the top of header
+            var offset = $('#header').offset().top
+                + parseInt($('#header').css("padding-bottom"));
+            //height of header in pixels
+            var height = $('#header').height();
+            //if user has scrolled past the top of header plus its height
+            //change the background color
+            if(scroll > (offset + height)){
+                $('#mainNav').css('background-color', '#4dbec6');
+            } else {
+                $('#mainNav').css('background-color', 'transparent');
+            }
+        });
+    });
 });
