@@ -19,7 +19,6 @@
 }
 #mainNav {
     padding: 0;
-    background-color: $primary;
     .navbar-left {
         padding: .5rem;
     }
@@ -47,6 +46,11 @@
 #footer {
     margin-bottom: 0;
     background-color: $primary;
+    color: $light-grey;
+    a {
+        color: $primary-muted-e;
+        font-weight: bold;
+    }
 }
 
 /* Page specific IDs */
@@ -99,6 +103,30 @@
     border-color: $green !important;
     .dot {
         background-color: $green;
+    }
+}
+.pink {
+    border-color: $pink !important;
+    .dot {
+        background-color: $pink;
+    }
+}
+.brown {
+    border-color: $brown !important;
+    .dot {
+        background-color: $brown;
+    }
+}
+.purple {
+    border-color: $purple !important;
+    .dot {
+        background-color: $purple;
+    }
+}
+.dark-blue {
+    border-color: $dark-blue !important;
+    .dot {
+        background-color: $dark-blue;
     }
 }
 

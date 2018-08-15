@@ -33,7 +33,6 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 
 #mainNav {
   padding: 0;
-  background-color: #4dbec6;
 }
 #mainNav .navbar-left {
   padding: 0.5rem;
@@ -63,6 +62,11 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 #footer {
   margin-bottom: 0;
   background-color: #4dbec6;
+  color: #f6f6f6;
+}
+#footer a {
+  color: #247ba0;
+  font-weight: bold;
 }
 
 /* Page specific IDs */
@@ -123,6 +127,34 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 .green .dot {
   background-color: #71da47;
+}
+
+.pink {
+  border-color: #dbb1a8 !important;
+}
+.pink .dot {
+  background-color: #dbb1a8;
+}
+
+.brown {
+  border-color: #83584c !important;
+}
+.brown .dot {
+  background-color: #83584c;
+}
+
+.purple {
+  border-color: #453f78 !important;
+}
+.purple .dot {
+  background-color: #453f78;
+}
+
+.dark-blue {
+  border-color: #1f3768 !important;
+}
+.dark-blue .dot {
+  background-color: #1f3768;
 }
 
 /* Media Queries */
