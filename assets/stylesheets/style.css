@@ -18,7 +18,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 /*** IDs ***/
 /* General */
 #header {
-  height: 50vh;
+  height: 520px;
   margin-bottom: 0;
   border-bottom: 7px #4dbec6 solid;
   background-image: url(../images/lola_beach.jpg);
@@ -30,7 +30,6 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   -o-background-size: cover;
   background-size: cover;
   color: #ffffff;
-  font-family: cursive;
 }
 
 #mainNav {
@@ -45,6 +44,10 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 #mainNav .active, #mainNav .nav-item:not(#nav-brand-item):hover {
   border-bottom: 3px solid;
+  padding-bottom: 0 !important;
+}
+#mainNav .nav-item:not(#nav-brand-item) {
+  padding-bottom: 3px;
 }
 #mainNav .nav-link:not(#nav-brand) {
   padding: 0.75rem;

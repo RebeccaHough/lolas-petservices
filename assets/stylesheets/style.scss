@@ -3,7 +3,7 @@
 /*** IDs ***/
 /* General */
 #header {
-    height: 50vh;
+    height: 520px;
     margin-bottom: 0;
     border-bottom: 7px $primary solid;
 
@@ -18,7 +18,7 @@
     background-size: cover; 
 
     color: $white;
-    font-family: cursive;
+    //font-family: Arial, sans-serif;
 }
 #mainNav {
     //Deal with strange margin/padding collapse
@@ -32,6 +32,10 @@
     }
     .active, .nav-item:not(#nav-brand-item):hover {
         border-bottom: 3px solid;
+        padding-bottom: 0 !important;
+    }
+    .nav-item:not(#nav-brand-item) {
+        padding-bottom: 3px;
     }
     .nav-link:not(#nav-brand) {
         padding: .75rem;
