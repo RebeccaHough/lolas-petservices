@@ -7,6 +7,6 @@ sass style.scss style.css
 ```
 to build, or 
 ```
-sass --watch style.scss style.css
+sass --watch assets/stylesheets/style.scss assets/stylesheets/style.css
 ```
 to build on changes.

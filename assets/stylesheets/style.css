@@ -29,6 +29,8 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: #ffffff;
+  font-family: cursive;
 }
 
 #mainNav {
@@ -112,50 +114,71 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 /* Colour classes */
-.orange {
+.orange.border-color {
   border-color: #ec9137 !important;
+}
+.orange.background {
+  background-color: #ec9137;
 }
 .orange .dot {
   background-color: #ec9137;
 }
 
-.yellow {
+.yellow.border-color {
   border-color: #eec45e !important;
+}
+.yellow.background {
+  background-color: #eec45e;
 }
 .yellow .dot {
   background-color: #eec45e;
 }
 
-.green {
+.green.border-color {
   border-color: #71da47 !important;
+}
+.green.background {
+  background-color: #71da47;
 }
 .green .dot {
   background-color: #71da47;
 }
 
-.pink {
+.pink.border-color {
   border-color: #fcb0b3 !important;
+}
+.pink.background {
+  background-color: #fcb0b3;
 }
 .pink .dot {
   background-color: #fcb0b3;
 }
 
-.brown {
+.brown.border-color {
   border-color: #794e45 !important;
+}
+.brown.background {
+  background-color: #794e45;
 }
 .brown .dot {
   background-color: #794e45;
 }
 
-.purple {
+.purple.border-color {
   border-color: #a59ee7 !important;
+}
+.purple.background {
+  background-color: #a59ee7;
 }
 .purple .dot {
   background-color: #a59ee7;
 }
 
-.dark-blue {
+.dark-blue.border-color {
   border-color: #3776f3 !important;
+}
+.dark-blue.background {
+  background-color: #3776f3;
 }
 .dark-blue .dot {
   background-color: #3776f3;
@@ -170,12 +193,6 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   #mainNav {
     background-color: #4dbec6 !important;
     position: static !important;
-  }
-}
-/* TODO doesn't work */
-@media (min-height: 550px) {
-  #header {
-    height: 550px;
   }
 }
 
