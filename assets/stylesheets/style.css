@@ -18,7 +18,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 /*** IDs ***/
 /* General */
 #header {
-  height: 50vw;
+  height: 50vh;
   margin-bottom: 0;
   border-bottom: 7px #4dbec6 solid;
   background-image: url(../images/lola_beach.jpg);
@@ -156,6 +156,12 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+}
+
+.quote-container {
+  padding: 60px 200px;
+  text-align: center;
+  width: 100%;
 }
 
 .text-container {
