@@ -32,10 +32,14 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 #mainNav {
+  padding: 0 15px;
+}
+#mainNav .container {
   padding: 0;
 }
-#mainNav .navbar-left {
-  padding: 0.5rem;
+#mainNav button {
+  color: #ffffff;
+  border: none !important;
 }
 #mainNav .active, #mainNav .nav-item:not(#nav-brand-item):hover {
   border-bottom: 3px solid;
@@ -47,12 +51,12 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 #mainNav .nav-link {
   color: #f6f6f6;
 }
-#mainNav .nav-link#nav-brand {
+#mainNav .navbar-brand {
   padding: 0;
+  margin: 0;
 }
-#mainNav .nav-link#nav-brand > img {
+#mainNav #nav-brand > img {
   height: 60px;
-  /*temporary*/
 }
 #mainNav + div {
   /*TODO clear below content*/
@@ -130,37 +134,42 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 .pink {
-  border-color: #dbb1a8 !important;
+  border-color: #fcb0b3 !important;
 }
 .pink .dot {
-  background-color: #dbb1a8;
+  background-color: #fcb0b3;
 }
 
 .brown {
-  border-color: #83584c !important;
+  border-color: #794e45 !important;
 }
 .brown .dot {
-  background-color: #83584c;
+  background-color: #794e45;
 }
 
 .purple {
-  border-color: #453f78 !important;
+  border-color: #a59ee7 !important;
 }
 .purple .dot {
-  background-color: #453f78;
+  background-color: #a59ee7;
 }
 
 .dark-blue {
-  border-color: #1f3768 !important;
+  border-color: #3776f3 !important;
 }
 .dark-blue .dot {
-  background-color: #1f3768;
+  background-color: #3776f3;
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   #header {
     display: none;
+  }
+
+  #mainNav {
+    background-color: #4dbec6 !important;
+    position: static !important;
   }
 }
 /* TODO doesn't work */

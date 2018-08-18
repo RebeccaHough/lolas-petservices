@@ -18,9 +18,14 @@
     background-size: cover; 
 }
 #mainNav {
-    padding: 0;
-    .navbar-left {
-        padding: .5rem;
+    //Deal with strange margin/padding collapse
+    padding: 0 15px;
+    .container {
+        padding: 0;
+    }
+    button {
+        color: $white; 
+        border: none !important;
     }
     .active, .nav-item:not(#nav-brand-item):hover {
         border-bottom: 3px solid;
@@ -32,11 +37,12 @@
     .nav-link {
         color: $light-grey;
     }
-    .nav-link#nav-brand {
+    .navbar-brand {
         padding: 0;
+        margin: 0;
     }
-    .nav-link#nav-brand > img {
-        height: 60px; /*temporary*/
+    #nav-brand > img {
+        height: 60px;
     }
     + div {
         /*TODO clear below content*/
@@ -131,8 +137,22 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
-    #header {display: none}
+// @media (min-width: 768px) {
+//     .container {
+//         max-width: 991px !important;
+//     }
+// }
+@media only screen and (max-width: 991px) {
+    #header {
+        display: none;
+    }
+    #mainNav {
+        background-color: $primary !important;
+        position: static !important; //TODO desired behaviour?
+        .nav-link {
+            //border-bottom: 3px transparent solid; //TODO
+        }
+    }
 }
 /* TODO doesn't work */
 @media (min-height: 550px) {

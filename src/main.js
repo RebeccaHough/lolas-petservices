@@ -17,14 +17,22 @@ $('document').ready(function() {
     //     imageSrc: '../assets/images/lola_beach.jpg'
     // });
 
+    $(window).resize(function() {
+        changeNavBarBgColour();
+    })
+
+    $(window).scroll(function() {
+        changeNavBarBgColour();
+    });
+
     //turn navbar's background blue after scrolling past header
-    $(function(){
-        $(window).scroll(function() {
+    function changeNavBarBgColour() {
+        if($(window).width() > 768) {
             //number of pixels scrolled
             var scroll = $(window).scrollTop();
             //pixels to the top of header
             var offset = $('#header').offset().top
-                + parseInt($('#header').css("padding-bottom"));
+            + parseInt($('#header').css("padding-bottom"));
             //height of header in pixels
             var height = $('#header').height();
             //if user has scrolled past the top of header plus its height
@@ -34,6 +42,6 @@ $('document').ready(function() {
             } else {
                 $('#mainNav').css('background-color', 'transparent');
             }
-        });
-    });
+        }
+    }
 });
