@@ -47,10 +47,6 @@
     #nav-brand > img {
         height: 60px;
     }
-    + div {
-        /*TODO clear below content*/
-        /*padding-top: 50px;*/
-    }
 }
 #footer {
     margin-bottom: 0;
@@ -74,18 +70,6 @@
 }
 
 /*** Classes ***/
-.footer-img {
-    max-height: 170px;
-}
-.bg-grey {
-    background-color: $light-grey;
-}
-.bg-white {
-    background-color: $white;
-}
-.text-container {
-    padding: 60px 50px;
-}
 .dot {
     height: .75rem;
     width: .75rem;
@@ -93,6 +77,76 @@
     border-radius: 50%;
     display: inline-block;
     margin-left: .25rem;
+}
+.circle-container {
+    padding: 60px 0px;
+}
+.circle-text {
+    width:50%;
+}
+.circle-text:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background: #4679BD;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+.circle-text div {
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
+.circle-img {
+    height: $circle-img-size;
+    width: $circle-img-size;
+    border-radius: 50%;
+    margin: .25rem .25rem 0 .25rem;
+    &.right {
+        float: right;
+    }
+}
+.circle-img-container {
+    overflow: hidden;
+    position: relative;
+    &.portrait > img {
+        position: absolute;
+        width: $circle-img-size;
+    }
+    &.landscape > img {
+        position: absolute;
+        height: $circle-img-size;
+    }
+}
+.icon-background {
+    color: $black;
+}
+.services-info {
+    border-top: 60px solid transparent;
+    margin-top: -60px;
+    -webkit-background-clip: padding-box;
+    -moz-background-clip: padding;
+    background-clip: padding-box;
+}
+.text-container {
+    padding: 60px 0px;
+}
+.bg-grey {
+    background-color: $light-grey;
+}
+.bg-white {
+    background-color: $white;
+}
+
+.footer-img {
+    max-height: 170px;
 }
 
 /* Colour classes */

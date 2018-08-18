@@ -60,10 +60,6 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 #mainNav #nav-brand > img {
   height: 60px;
 }
-#mainNav + div {
-  /*TODO clear below content*/
-  /*padding-top: 50px;*/
-}
 
 #footer {
   margin-bottom: 0;
@@ -88,8 +84,82 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 /*** Classes ***/
-.footer-img {
-  max-height: 170px;
+.dot {
+  height: 0.75rem;
+  width: 0.75rem;
+  background-color: #bbbbbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.25rem;
+}
+
+.circle-container {
+  padding: 60px 0px;
+}
+
+.circle-text {
+  width: 50%;
+}
+
+.circle-text:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background: #4679BD;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+.circle-text div {
+  float: left;
+  width: 100%;
+  padding-top: 50%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  text-align: center;
+  color: white;
+}
+
+.circle-img {
+  height: 155px;
+  width: 155px;
+  border-radius: 50%;
+  margin: 0.25rem 0.25rem 0 0.25rem;
+}
+.circle-img.right {
+  float: right;
+}
+
+.circle-img-container {
+  overflow: hidden;
+  position: relative;
+}
+.circle-img-container.portrait > img {
+  position: absolute;
+  width: 155px;
+}
+.circle-img-container.landscape > img {
+  position: absolute;
+  height: 155px;
+}
+
+.icon-background {
+  color: #000000;
+}
+
+.services-info {
+  border-top: 60px solid transparent;
+  margin-top: -60px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.text-container {
+  padding: 60px 0px;
 }
 
 .bg-grey {
@@ -100,17 +170,8 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   background-color: #ffffff;
 }
 
-.text-container {
-  padding: 60px 50px;
-}
-
-.dot {
-  height: 0.75rem;
-  width: 0.75rem;
-  background-color: #bbbbbb;
-  border-radius: 50%;
-  display: inline-block;
-  margin-left: 0.25rem;
+.footer-img {
+  max-height: 170px;
 }
 
 /* Colour classes */
