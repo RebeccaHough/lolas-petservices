@@ -104,6 +104,12 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   padding: 60px 50px;
 }
 
+.quote-container {
+  padding: 60px 200px;
+  text-align: center;
+  width: 100%;
+}
+
 .dot {
   height: 0.75rem;
   width: 0.75rem;
