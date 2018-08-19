@@ -16,14 +16,21 @@ $('document').ready(function() {
     //     speed: -0.2,
     //     imageSrc: '../assets/images/lola_beach.jpg'
     // });
+    
+    // Set inital colour of nav bar
+    changeNavBarBgColour();
 
     $(window).resize(function() {
         changeNavBarBgColour();
+        console.log("resized");
     })
 
     $(window).scroll(function() {
         changeNavBarBgColour();
+        console.log("scrolled");
     });
+
+
 
     //turn navbar's background blue after scrolling past header
     function changeNavBarBgColour() {
