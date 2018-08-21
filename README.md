@@ -11,6 +11,4 @@ sass --watch assets/stylesheets/style.scss assets/stylesheets/style.css
 ```
 to build on changes.
 
-[website link](https://github.com/RebeccaHough/lolas-petservices/tree/master/src/index.html)
-[website link](src/index.html)
-[website link](../blob/master/src/index.html)
+[website link](https://rebeccahough.github.io/lolas-petservices/src/index.html)
