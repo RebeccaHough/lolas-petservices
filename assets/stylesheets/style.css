@@ -160,7 +160,23 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 .circle-container {
-  padding: 60px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.circle-container .row > div {
+  padding: 1rem calc(1rem + 15px) 1rem calc(1rem + 15px);
+}
+.circle-container .circle {
+  text-align: center;
+}
+.circle-container .circle a {
+  margin: 1rem;
+}
+.circle-container .circle a .fa-circle {
+  color: #4dbec6;
+}
+.circle-container .circle a .fa-paw {
+  color: #ffffff;
 }
 
 .circle-text {
@@ -318,6 +334,17 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 /* Media Queries */
+@media only screen and (min-width: 576px) {
+  .circle-container .right-padded {
+    padding-right: 18% !important;
+  }
+  .circle-container .left-padded {
+    padding-left: 18% !important;
+  }
+  .circle-container .row > div {
+    padding: 0 15px 0 15px;
+  }
+}
 @media only screen and (max-width: 991px) {
   #header {
     display: none;
