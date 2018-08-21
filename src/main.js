@@ -16,39 +16,4 @@ $('document').ready(function() {
     //     speed: -0.2,
     //     imageSrc: '../assets/images/lola_beach.jpg'
     // });
-    
-    // Set inital colour of nav bar
-    changeNavBarBgColour();
-
-    $(window).resize(function() {
-        changeNavBarBgColour();
-        console.log("resized");
-    })
-
-    $(window).scroll(function() {
-        changeNavBarBgColour();
-        console.log("scrolled");
-    });
-
-
-
-    //turn navbar's background blue after scrolling past header
-    function changeNavBarBgColour() {
-        if($(window).width() > 768) {
-            //number of pixels scrolled
-            var scroll = $(window).scrollTop();
-            //pixels to the top of header
-            var offset = $('#header').offset().top
-            + parseInt($('#header').css("padding-bottom"));
-            //height of header in pixels
-            var height = $('#header').height();
-            //if user has scrolled past the top of header plus its height
-            //change the background color
-            if(scroll > (offset + height)){
-                $('#mainNav').css('background-color', '#4dbec6');
-            } else {
-                $('#mainNav').css('background-color', 'transparent');
-            }
-        }
-    }
 });

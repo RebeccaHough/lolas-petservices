@@ -2,6 +2,18 @@
 
 /*** IDs ***/
 /* General */
+#contactBar {
+    .container {
+        padding-left: 0; 
+        padding-right: 0;
+    }
+    a {
+        color: $primary;
+    }
+    a:hover {
+        color: $primary; //TODO
+    }
+}
 #header {
     height: 520px;
     margin-bottom: 0;
@@ -20,9 +32,28 @@
     color: $white;
     //font-family: Arial, sans-serif;
 }
+#mainNavFlexWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    > .navbar-nav {
+        display: flex;
+        flex: 2;
+        &.left {
+            justify-content: flex-end;
+        }
+    }
+    > .navbar-brand {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+    }
+}
 #mainNav {
     //Deal with strange margin/padding collapse
     padding: 0 15px;
+    background-color: $primary;
     .container {
         padding: 0;
     }
@@ -30,14 +61,20 @@
         color: $white; 
         border: none !important;
     }
-    .active, .nav-item:not(#nav-brand-item):hover {
+    button:focus {
+        outline-color: $light-grey;
+    }
+    .navbar-brand.appear-md {
+        display: none !important;
+    }
+    .active, .nav-item:hover {
         border-bottom: 3px solid;
         padding-bottom: 0 !important;
     }
-    .nav-item:not(#nav-brand-item) {
+    .nav-item {
         padding-bottom: 3px;
     }
-    .nav-link:not(#nav-brand) {
+    .nav-link:not(.navbar-brand) {
         padding: .75rem;
         text-transform: uppercase;
     }
@@ -47,18 +84,20 @@
     .navbar-brand {
         padding: 0;
         margin: 0;
-    }
-    #nav-brand > img {
-        height: 60px;
+        > img {
+            height: 60px;
+        }
     }
 }
 #footer {
     margin-bottom: 0;
-    background-color: $primary;
+    background-color: $dark-grey;
     color: $light-grey;
     a {
-        color: $primary-muted-e;
-        font-weight: bold;
+        color: $light-grey;
+    }
+    a:hover {
+        color: $primary;
     }
 }
 
@@ -249,5 +288,35 @@
     #mainNav {
         background-color: $primary !important;
         position: static !important; //TODO desired behaviour?
+        // Remove flexbox and centered logo from mobile menu
+        .navbar-brand.appear-md {
+            display: block !important;
+        }
+        .navbar-brand.appear-lg {
+            display: none !important;
+        }
+        #mainNavFlexWrapper {
+            display: block !important;
+        } 
+        #mainNavFlexWrapper > div {
+            display: block !important;
+        }
+        // End
+        .dropdown-menu {
+            background-color: $primary;
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            border: none;
+        }
+        .dropdown-item {
+            color: #ffffff;
+            padding-bottom: 3px;
+        }
+       .dropdown-item:hover {
+            background-color: $primary;
+            padding-bottom: 0;
+            border-bottom: 3px $green solid;
+        }
     }
 }

@@ -23,66 +23,79 @@
 		<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon_256x256.png">
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+		<div id="contactBar" class="container-fluid bg-grey">
+			<div class="container d-flex justify-content-between">
+				<a class="nav-link" href="mailto:lolas-petservices@hotmail.com">
+					<span class="far fa-envelope"></span>
+					&nbsp;lolas-petservices@hotmail.com 
+				</a>
+				<a class="nav-link" href="tel:0000000000">
+					<span class="fas fa-phone"></span>
+					&nbsp;00000 000 000 
+				</a>
+			</div>
+		</div>
+		<nav id="mainNav" class="navbar navbar-expand-lg sticky-top">
 			<div class="container">
-				<a class="navbar-brand order-lg-last order-0" href="index.html" id="nav-brand">
+				<a class="navbar-brand appear-md" href="index.html" id="nav-brand">
 					<img src="../assets/images/logo_lola's_text_only_transparent.png">
 				</a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 					<span class="fas fa-bars"></span>
 				</button>
 				<div class="collapse navbar-collapse" id="collapsibleNavbar">
-					<ul class="navbar-nav navbar-left">
-						<li class="orange border-color nav-item">
-							<a class="nav-link" href="index.html">
-								Home
-								<span class="dot"></span>
-							</a>
-						</li>
-						<li class="yellow border-color nav-item">
-							<a class="nav-link" href="about.html">
-								About
-								<span class="dot"></span>
-							</a>
-						</li>
-						<li class="active green border-color nav-item dropdown">
-							<a class="nav-link" href="services.html">
-								Services 
-								<span class="dot"></span>
-							</a>
-							<div class="dropdown-menu">
-								<a class="dropdown-item" href="services.html#dogWalking">Dog Walking</a>
-								<a class="dropdown-item" href="services.html#homeVisits">Home Visits</a>
-								<a class="dropdown-item" href="services.html#dayCare">Day Care</a>
-								<a class="dropdown-item" href="services.html#dogSitting">Dog Sitting</a>
-								<a class="dropdown-item" href="services.html#catHoliday">Cat Holiday</a>
-							</div>
-						</li>
-						<li class="pink border-color nav-item">
-							<a class="nav-link" href="testimonials.html">
-								Testimonials
-								<span class="dot"></span>
-							</a>
-						</li>
-						<li class="brown border-color nav-item">
-							<a class="nav-link" href="gallery.html">
-								Gallery
-								<span class="dot"></span>
-							</a>
-						</li>
-						<li class="purple border-color nav-item">
-							<a class="nav-link" href="location.html">
-								Location
-								<span class="dot"></span>
-							</a>
-						</li>
-						<li class="dark-blue border-color nav-item">
-							<a class="nav-link" href="contact.html">
-								Contact
-								<span class="dot"></span>
-							</a>
-						</li>
-					</ul>
+					<div id="mainNavFlexWrapper">
+						<ul class="navbar-nav">
+							<li class="orange border-color nav-item">
+								<a class="nav-link" href="index.html">
+									Home
+									<span class="dot"></span>
+								</a>
+							</li>
+							<li class="yellow border-color nav-item">
+								<a class="nav-link" href="about.html">
+									About
+									<span class="dot"></span>
+								</a>
+							</li>
+							<li class="active green border-color nav-item dropdown">
+								<a class="nav-link" href="services.html">
+									Services 
+									<span class="dot"></span>
+								</a>
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="services.html#dogWalking">Dog Walking</a>
+									<a class="dropdown-item" href="services.html#homeVisits">Home Visits</a>
+									<a class="dropdown-item" href="services.html#dayCare">Day Care</a>
+									<a class="dropdown-item" href="services.html#dogSitting">Dog Sitting</a>
+									<a class="dropdown-item" href="services.html#catHoliday">Cat Holiday</a>
+								</div>
+							</li>
+						</ul>
+						<a class="navbar-brand appear-lg" href="index.html">
+							<img src="../assets/images/logo_lola's_text_only_transparent.png">
+						</a>
+						<ul class="navbar-nav left">
+							<li class="pink border-color nav-item">
+								<a class="nav-link" href="testimonials.html">
+									Testimonials
+									<span class="dot"></span>
+								</a>
+							</li>
+							<li class="brown border-color nav-item">
+								<a class="nav-link" href="gallery.html">
+									Gallery
+									<span class="dot"></span>
+								</a>
+							</li>
+							<li class="purple border-color nav-item">
+								<a class="nav-link" href="location.html">
+									Location
+									<span class="dot"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav> 
@@ -206,14 +219,29 @@
 				</div>
 			</div>
 
-		<footer class="jumbotron jumbotron-fluid" id="footer">	
+		<footer id="footer" class="jumbotron jumbotron-fluid">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4 mb-3 d-flex justify-content-center align-items-center">
-						<img src="../assets/images/logo_fitted.jpg" class="footer-img img-fluid" alt="Lola's dog walking services">
+						<img src="../assets/images/logo_fitted_transparent.png" class="footer-img img-fluid" alt="Lola's dog walking services">
 					</div>
 					<div class="col-sm-8 mb-3 d-flex align-items-center">
-						<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu ex, iaculis vitae pretium id, consectetur in purus. Fusce non ultrices arcu, in varius sapien. Fusce commodo nec nisl at interdum. In ultricies augue eu augue facilisis, eu scelerisque odio feugiat.</div>
+						<div class="row">
+							<div class="col-6">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc arcu ex, iaculis vitae pretium id, consectetur in purus. Fusce non ultrices arcu, in varius sapien.
+							</div>
+							<div class="col-6">
+								Areas covered
+								<ul>
+									<li>Tilford</li>
+									<li>Rushmoor</li>
+									<li>Frensham</li>
+									<li>Elsted</li>
+									<li>Hindhead</li>
+									<li>South Farnham</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -221,26 +249,26 @@
 						<ul class="nav justify-content-center">
 							<li class="nav-item">
 								<a class="nav-link" href="#">
-									Facebook |
 									<span class="fab fa-facebook-square"></span>
+									&nbsp;Facebook
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="https://www.instagram.com/8test_account">
-									Instagram |
 									<span class="fab fa-instagram"></span>
+									&nbsp;Instagram
 								</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="mailto:lolas-petservices@hotmail.com">
-									Email: lolas-petservices@hotmail.com |
 									<span class="far fa-envelope"></span>
+									&nbsp;lolas-petservices@hotmail.com 
 								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="#">
-									Telephone: 00000 000 000 |
+								<a class="nav-link" href="tel:0000000000">
 									<span class="fas fa-phone"></span>
+									&nbsp;00000 000 000 
 								</a>
 							</li>
 						</ul>

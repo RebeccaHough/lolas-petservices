@@ -17,6 +17,17 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 */
 /*** IDs ***/
 /* General */
+#contactBar .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+#contactBar a {
+  color: #4dbec6;
+}
+#contactBar a:hover {
+  color: #4dbec6;
+}
+
 #header {
   height: 520px;
   margin-bottom: 0;
@@ -32,8 +43,28 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   color: #ffffff;
 }
 
+#mainNavFlexWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+#mainNavFlexWrapper > .navbar-nav {
+  display: flex;
+  flex: 2;
+}
+#mainNavFlexWrapper > .navbar-nav.left {
+  justify-content: flex-end;
+}
+#mainNavFlexWrapper > .navbar-brand {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
 #mainNav {
   padding: 0 15px;
+  background-color: #4dbec6;
 }
 #mainNav .container {
   padding: 0;
@@ -42,14 +73,20 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   color: #ffffff;
   border: none !important;
 }
-#mainNav .active, #mainNav .nav-item:not(#nav-brand-item):hover {
+#mainNav button:focus {
+  outline-color: #f6f6f6;
+}
+#mainNav .navbar-brand.appear-md {
+  display: none !important;
+}
+#mainNav .active, #mainNav .nav-item:hover {
   border-bottom: 3px solid;
   padding-bottom: 0 !important;
 }
-#mainNav .nav-item:not(#nav-brand-item) {
+#mainNav .nav-item {
   padding-bottom: 3px;
 }
-#mainNav .nav-link:not(#nav-brand) {
+#mainNav .nav-link:not(.navbar-brand) {
   padding: 0.75rem;
   text-transform: uppercase;
 }
@@ -60,18 +97,20 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   padding: 0;
   margin: 0;
 }
-#mainNav #nav-brand > img {
+#mainNav .navbar-brand > img {
   height: 60px;
 }
 
 #footer {
   margin-bottom: 0;
-  background-color: #4dbec6;
+  background-color: #5f5f5f;
   color: #f6f6f6;
 }
 #footer a {
-  color: #247ba0;
-  font-weight: bold;
+  color: #f6f6f6;
+}
+#footer a:hover {
+  color: #4dbec6;
 }
 
 /* Page specific IDs */
@@ -263,6 +302,34 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   #mainNav {
     background-color: #4dbec6 !important;
     position: static !important;
+  }
+  #mainNav .navbar-brand.appear-md {
+    display: block !important;
+  }
+  #mainNav .navbar-brand.appear-lg {
+    display: none !important;
+  }
+  #mainNav #mainNavFlexWrapper {
+    display: block !important;
+  }
+  #mainNav #mainNavFlexWrapper > div {
+    display: block !important;
+  }
+  #mainNav .dropdown-menu {
+    background-color: #4dbec6;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    border: none;
+  }
+  #mainNav .dropdown-item {
+    color: #ffffff;
+    padding-bottom: 3px;
+  }
+  #mainNav .dropdown-item:hover {
+    background-color: #4dbec6;
+    padding-bottom: 0;
+    border-bottom: 3px #71da47 solid;
   }
 }
 
