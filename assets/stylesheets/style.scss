@@ -67,19 +67,24 @@
     .navbar-brand.appear-md {
         display: none !important;
     }
-    .active, .nav-item:hover {
+    .nav-item:not(.dropdown) {
+        padding-bottom: 3px;
+    }
+    .active:not(.dropdown), .nav-item:not(.dropdown):hover {
         border-bottom: 3px solid;
         padding-bottom: 0 !important;
-    }
-    .nav-item {
-        padding-bottom: 3px;
     }
     .nav-link:not(.navbar-brand) {
         padding: .75rem;
         text-transform: uppercase;
-    }
-    .nav-link {
         color: $light-grey;
+    }
+    .nav-link.dropdown-link {
+        padding-bottom: calc(.75rem + 3px) !important;
+    }
+    .active .nav-link.dropdown-link, .nav-link.dropdown-link:hover {
+        border-bottom: 3px solid;
+        padding-bottom: .75rem !important;
     }
     .navbar-brand {
         padding: 0;
@@ -87,6 +92,25 @@
         > img {
             height: 60px;
         }
+    }
+    .dropdown-menu {
+        background-color: $primary;
+        top: 110%;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        border: none;
+        border-radius: 0%;
+    }
+    .dropdown-item {
+        color: $light-grey;
+        margin-top: .25rem;
+        padding-bottom: 6px;
+    }
+   .dropdown-item:hover {
+        background-color: $primary;
+        padding-bottom: 3px;
+        border-bottom: 3px solid;
     }
 }
 #footer {
@@ -276,18 +300,14 @@
 }
 
 /* Media Queries */
-// @media (min-width: 768px) {
-//     .container {
-//         max-width: 991px !important;
-//     }
-// }
+// @media (min-width: 768px) {}
 @media only screen and (max-width: 991px) {
     #header {
         display: none;
     }
     #mainNav {
         background-color: $primary !important;
-        position: static !important; //TODO desired behaviour?
+        position: static !important;
         // Remove flexbox and centered logo from mobile menu
         .navbar-brand.appear-md {
             display: block !important;
@@ -301,22 +321,6 @@
         #mainNavFlexWrapper > div {
             display: block !important;
         }
-        // End
-        .dropdown-menu {
-            background-color: $primary;
-            margin-top: 0;
-            padding-top: 0;
-            padding-bottom: 0;
-            border: none;
-        }
-        .dropdown-item {
-            color: #ffffff;
-            padding-bottom: 3px;
-        }
-       .dropdown-item:hover {
-            background-color: $primary;
-            padding-bottom: 0;
-            border-bottom: 3px $green solid;
-        }
+        // End remove
     }
 }

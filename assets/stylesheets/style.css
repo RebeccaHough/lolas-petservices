@@ -79,19 +79,24 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 #mainNav .navbar-brand.appear-md {
   display: none !important;
 }
-#mainNav .active, #mainNav .nav-item:hover {
+#mainNav .nav-item:not(.dropdown) {
+  padding-bottom: 3px;
+}
+#mainNav .active:not(.dropdown), #mainNav .nav-item:not(.dropdown):hover {
   border-bottom: 3px solid;
   padding-bottom: 0 !important;
-}
-#mainNav .nav-item {
-  padding-bottom: 3px;
 }
 #mainNav .nav-link:not(.navbar-brand) {
   padding: 0.75rem;
   text-transform: uppercase;
-}
-#mainNav .nav-link {
   color: #f6f6f6;
+}
+#mainNav .nav-link.dropdown-link {
+  padding-bottom: calc(.75rem + 3px) !important;
+}
+#mainNav .active .nav-link.dropdown-link, #mainNav .nav-link.dropdown-link:hover {
+  border-bottom: 3px solid;
+  padding-bottom: 0.75rem !important;
 }
 #mainNav .navbar-brand {
   padding: 0;
@@ -99,6 +104,25 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 #mainNav .navbar-brand > img {
   height: 60px;
+}
+#mainNav .dropdown-menu {
+  background-color: #4dbec6;
+  top: 110%;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: none;
+  border-radius: 0%;
+}
+#mainNav .dropdown-item {
+  color: #f6f6f6;
+  margin-top: 0.25rem;
+  padding-bottom: 6px;
+}
+#mainNav .dropdown-item:hover {
+  background-color: #4dbec6;
+  padding-bottom: 3px;
+  border-bottom: 3px solid;
 }
 
 #footer {
@@ -314,22 +338,6 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   }
   #mainNav #mainNavFlexWrapper > div {
     display: block !important;
-  }
-  #mainNav .dropdown-menu {
-    background-color: #4dbec6;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    border: none;
-  }
-  #mainNav .dropdown-item {
-    color: #ffffff;
-    padding-bottom: 3px;
-  }
-  #mainNav .dropdown-item:hover {
-    background-color: #4dbec6;
-    padding-bottom: 0;
-    border-bottom: 3px #71da47 solid;
   }
 }
 
