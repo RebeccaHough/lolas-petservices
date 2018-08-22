@@ -11,7 +11,7 @@
         color: $primary;
     }
     a:hover {
-        color: $primary; //TODO
+        color: $secondary;
     }
 }
 #header {
@@ -115,7 +115,7 @@
 }
 #footer {
     margin-bottom: 0;
-    background-color: $dark-grey;
+    background-color: $secondary-dark;
     color: $light-grey;
     a {
         color: $light-grey;
