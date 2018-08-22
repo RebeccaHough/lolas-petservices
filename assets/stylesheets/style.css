@@ -99,11 +99,11 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   padding-bottom: 0.75rem !important;
 }
 #mainNav .navbar-brand {
-  padding: 0;
+  padding: 1rem 0.25rem;
   margin: 0;
 }
 #mainNav .navbar-brand > img {
-  height: 60px;
+  height: 100px;
 }
 #mainNav .dropdown-menu {
   background-color: #4dbec6;
