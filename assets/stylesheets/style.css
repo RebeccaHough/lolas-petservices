@@ -133,7 +133,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 #footer a {
   color: #f6f6f6;
 }
-#footer a:hover {
+#footer a:hover, #footer h5, #footer span {
   color: #4dbec6;
 }
 #footer .footer-img {
@@ -147,6 +147,12 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 #footer .footer-text.f-grow-1 {
   flex: 1 1 0%;
+}
+#footer #footerLinks {
+  font-size: 1.15rem;
+}
+#footer #footerCopyright {
+  font-size: 0.9rem;
 }
 
 /* Page specific IDs */

@@ -120,7 +120,8 @@
     a {
         color: $light-grey;
     }
-    a:hover {
+    //link hover, titles and font awesome spans
+    a:hover, h5, span {
         color: $primary;
     }
     .footer-img {
@@ -134,6 +135,12 @@
         &.f-grow-1 {
             flex: 1 1 0%;
         }
+    }
+    #footerLinks {
+        font-size: 1.15rem
+    }
+    #footerCopyright {
+        font-size: .9rem;
     }
 }
 
