@@ -1,5 +1,13 @@
 @import 'variables.scss';
 
+@font-face {
+    font-family: "LolasFont";
+    src: url(../fonts/Amarillo.otf) format("opentype"),
+        url(../fonts/Amarillo.ttf) format("truetype"),
+        local("Arial"),
+        local("sans-serif");
+}
+
 /*** IDs ***/
 /* General */
 #contactBar {
@@ -30,7 +38,7 @@
     background-size: cover; 
 
     color: $white;
-    //font-family: Arial, sans-serif;
+    font-family: 'LolasFont';
 }
 #mainNavFlexWrapper {
     display: flex;

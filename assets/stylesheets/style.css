@@ -15,6 +15,10 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 .box { @include transform(rotate(30deg)); }  
 
 */
+@font-face {
+  font-family: "LolasFont";
+  src: url(../fonts/Amarillo.otf) format("opentype"), url(../fonts/Amarillo.ttf) format("truetype"), local("Arial"), local("sans-serif");
+}
 /*** IDs ***/
 /* General */
 #contactBar .container {
@@ -41,6 +45,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   -o-background-size: cover;
   background-size: cover;
   color: #ffffff;
+  font-family: "LolasFont";
 }
 
 #mainNavFlexWrapper {
