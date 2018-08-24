@@ -163,7 +163,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 
 /* Location */
 #googleMaps {
-  height: 700px;
+  height: 60vh;
   padding: 0;
 }
 #googleMaps iframe {
