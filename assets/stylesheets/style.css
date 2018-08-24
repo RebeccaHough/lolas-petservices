@@ -136,6 +136,18 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 #footer a:hover {
   color: #4dbec6;
 }
+#footer .footer-img {
+  max-height: 170px;
+}
+#footer .footer-text {
+  padding: 0 15px;
+}
+#footer .footer-text.f-grow-2 {
+  flex: 2 1 0%;
+}
+#footer .footer-text.f-grow-1 {
+  flex: 1 1 0%;
+}
 
 /* Page specific IDs */
 /* Gallery */
@@ -261,10 +273,6 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 
 .bg-white {
   background-color: #ffffff;
-}
-
-.footer-img {
-  max-height: 170px;
 }
 
 /* Colour classes */
