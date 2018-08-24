@@ -264,9 +264,17 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 .quote-container {
-  padding: 60px 200px;
+  padding: 60px 14%;
   text-align: center;
   width: 100%;
+}
+.quote-container > span {
+  display: block;
+}
+.quote-container > p {
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-style: italic;
 }
 
 .text-container {
@@ -353,6 +361,11 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 /* Media Queries */
+@media only screen and (max-width: 460px) {
+  .quote-container {
+    padding: 60px 2%;
+  }
+}
 @media only screen and (min-width: 576px) {
   .circle-container .right-padded {
     padding-right: 18% !important;

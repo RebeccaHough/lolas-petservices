@@ -243,9 +243,17 @@
     background-clip: padding-box;
 }
 .quote-container {
-    padding: 60px 200px;
+    padding: 60px 14%;
     text-align: center;
     width: 100%;
+    > span {
+        display: block;
+    }
+    > p {
+        padding: 0 1rem;
+        margin: 1rem 0;
+        font-style: italic;
+    }
 }
 .text-container {
     padding: 60px 0px;
@@ -338,7 +346,12 @@
 
 /* Media Queries */
 // @media only screen and (min-width: 768px) {}
- @media only screen and (min-width: 576px) {
+@media only screen and (max-width: 460px) {
+    .quote-container {
+        padding: 60px 2%;
+    }
+}
+@media only screen and (min-width: 576px) {
     .circle-container {
         .right-padded {
             padding-right: 18% !important;
@@ -350,7 +363,7 @@
             padding: 0 15px 0 15px;
         }
     }
- }
+}
 @media only screen and (max-width: 991px) {
     #header {
         display: none;
