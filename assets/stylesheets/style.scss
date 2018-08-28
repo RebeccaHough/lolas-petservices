@@ -7,13 +7,6 @@ a {
         text-decoration: none !important;
     }
 }
-@font-face {
-    font-family: "LolasFont";
-    src: url(../fonts/Amarillo.otf) format("opentype"),
-        url(../fonts/Amarillo.ttf) format("truetype"),
-        local("Arial"),
-        local("sans-serif");
-}
 
 /*** IDs ***/
 /* General */
@@ -136,19 +129,28 @@ a {
     background-size: cover; 
 
     color: $white;
-    font-family: 'LolasFont', Arial, sans-serif;
+    h1 {
+        line-height: 2.4; //to fit font height
+        font-family: $font-stack-script;
+    }
 }
 #header {
     height: 150px;
     margin-bottom: 0;
+    color: $white;
     h1 {
-        font-size: 7rem;
         //font-weight: 800;
         //font-style: italic;
-        color: $white;
-        padding-top: 20px;
-        //font border
+        line-height: 2.4; //to fit font height
+        font-family: $font-stack-script;
         //text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
+    }
+    .container {
+        //vertically center
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
 }
 #footer {
