@@ -113,46 +113,6 @@ a {
         border-bottom: 3px solid;
     }
 }
-#indexHeader {
-    height: 520px;
-    margin-bottom: 0;
-    border-bottom: 7px $primary solid;
-
-    background-image: url(../images/lola_beach.jpg);
-    background-repeat: no-repeat;
-    background-position: center calc(38%);
-    background-attachment: fixed;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-
-    color: $white;
-    h1 {
-        line-height: 2.4; //to fit font height
-        font-family: $font-stack-script;
-    }
-}
-#header {
-    height: 150px;
-    margin-bottom: 0;
-    color: $white;
-    h1 {
-        //font-weight: 800;
-        //font-style: italic;
-        line-height: 2.4; //to fit font height
-        font-family: $font-stack-script;
-        //text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
-    }
-    .container {
-        //vertically center
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-    }
-}
 #footer {
     margin-bottom: 0;
     background-color: $secondary-dark;
