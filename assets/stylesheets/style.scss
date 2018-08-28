@@ -1,36 +1,35 @@
 @import 'variables.scss';
 
+/*** Elements ***/
+a {
+    text-decoration: none !important;
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
 /*** IDs ***/
 /* General */
 #contactBar {
     .container {
         padding-left: 0; 
         padding-right: 0;
+        flex-wrap: wrap;
+        a:first-child {
+            margin-top: .5rem;
+        }
+        a:nth-child(2) {
+            //collapse nicely
+            margin: .5rem 0;
+        }
     }
     a {
         color: $primary;
+        padding: 0 1rem;
     }
     a:hover {
         color: $secondary;
     }
-}
-#header {
-    height: 520px;
-    margin-bottom: 0;
-    border-bottom: 7px $primary solid;
-
-    background-image: url(../images/lola_beach.jpg);
-    background-repeat: no-repeat;
-    background-position: center calc(38%);
-    background-attachment: fixed;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-
-    color: $white;
-    //font-family: Arial, sans-serif;
 }
 #mainNavFlexWrapper {
     display: flex;
@@ -54,6 +53,7 @@
     //Deal with strange margin/padding collapse
     padding: 0 15px;
     background-color: $primary;
+    font-family: $font-stack-title;
     .container {
         padding: 0;
     }
@@ -113,6 +113,37 @@
         border-bottom: 3px solid;
     }
 }
+#indexHeader {
+    height: 520px;
+    margin-bottom: 0;
+    border-bottom: 7px $primary solid;
+
+    background-image: url(../images/lola_beach.jpg);
+    background-repeat: no-repeat;
+    background-position: center calc(38%);
+    background-attachment: fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+
+    color: $white;
+    //font-family: Arial, sans-serif;
+}
+#header {
+    height: 150px;
+    margin-bottom: 0;
+    h1 {
+        font-size: 7rem;
+        //font-weight: 800;
+        //font-style: italic;
+        color: $white;
+        padding-top: 20px;
+        //font border
+        //text-shadow: -1px 0 $white, 0 1px $white, 1px 0 $white, 0 -1px $white;
+    }
+}
 #footer {
     margin-bottom: 0;
     background-color: $secondary-dark;
@@ -140,7 +171,8 @@
         font-size: 1.15rem
     }
     #footerCopyright {
-        font-size: .9rem;
+        font-size: .8rem;
+        text-align: center;
     }
 }
 
@@ -176,40 +208,21 @@
         padding: 1rem calc(1rem + 15px) 1rem calc(1rem + 15px);
     }
     .circle {
-        text-align: center;
-        a {
-            margin: 1rem;
-            .fa-circle {
-                color: $primary;
-            }
-            .fa-paw {
-                color: $white;
-            }
+        width: 100%;
+        .dot {
+            display: block;
+            height: 8rem;
+            width: 8rem;
+            margin: 1rem auto;
+            overflow: hidden; //prevent vertical margin collapse
+            background-color: $primary;
+        }
+        img {
+            display: block;
+            margin: 15% auto;
+            width: 70%;
         }
     }
-}
-.circle-text {
-    width:50%;
-}
-.circle-text:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height:0;
-    padding-bottom: 100%;
-    background: #4679BD;
-    border-radius: 50%;
-    -moz-border-radius: 50%;
-    -webkit-border-radius: 50%;
-}
-.circle-text div {
-    float:left;
-    width:100%;
-    padding-top:50%;
-    line-height:1em;
-    margin-top:-0.5em;
-    text-align:center;
-    color:white;
 }
 .circle-img {
     height: $circle-img-size;
@@ -220,6 +233,7 @@
         float: right;
     }
 }
+/* Container for non-square circle images, use `top` and `left` inline to position */
 .circle-img-container {
     overflow: hidden;
     position: relative;
@@ -352,12 +366,12 @@
     }
  }
 @media only screen and (max-width: 991px) {
-    #header {
-        display: none;
-    }
+    //convert to mobile menu
     #mainNav {
-        background-color: $primary !important;
         position: static !important;
+        .navbar-brand > img {
+            height: 70px;
+        }
         // Remove flexbox and centered logo from mobile menu
         .navbar-brand.appear-md {
             display: block !important;
@@ -367,6 +381,7 @@
         }
         #mainNavFlexWrapper {
             display: block !important;
+            padding-bottom: 10px;
         } 
         #mainNavFlexWrapper > div {
             display: block !important;
