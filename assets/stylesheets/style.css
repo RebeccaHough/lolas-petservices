@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Amarillo";
+  src: url(../fonts/Amarillo.otf) format("opentype"), url(../fonts/Amarillo.ttf) format("truetype"), local("Arial"), local("sans-serif");
+}
 /* Variables */
 /* Mixins */
 /* use like
@@ -23,6 +27,10 @@ a:hover {
   text-decoration: none !important;
 }
 
+@font-face {
+  font-family: "LolasFont";
+  src: url(../fonts/Amarillo.otf) format("opentype"), url(../fonts/Amarillo.ttf) format("truetype"), local("Arial"), local("sans-serif");
+}
 /*** IDs ***/
 /* General */
 #contactBar .container {
@@ -140,6 +148,7 @@ a:hover {
   -o-background-size: cover;
   background-size: cover;
   color: #ffffff;
+  font-family: "LolasFont", Arial, sans-serif;
 }
 
 #header {
@@ -191,7 +200,7 @@ a:hover {
 
 /* Location */
 #googleMaps {
-  height: 700px;
+  height: 60vh;
   padding: 0;
 }
 #googleMaps iframe {
@@ -271,9 +280,17 @@ a:hover {
 }
 
 .quote-container {
-  padding: 60px 200px;
+  padding: 60px 14%;
   text-align: center;
   width: 100%;
+}
+.quote-container > span {
+  display: block;
+}
+.quote-container > p {
+  padding: 0 1rem;
+  margin: 1rem 0;
+  font-style: italic;
 }
 
 .text-container {
@@ -360,6 +377,11 @@ a:hover {
 }
 
 /* Media Queries */
+@media only screen and (max-width: 460px) {
+  .quote-container {
+    padding: 60px 2%;
+  }
+}
 @media only screen and (min-width: 576px) {
   .circle-container .right-padded {
     padding-right: 18% !important;
