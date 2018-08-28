@@ -10,27 +10,6 @@ a {
 
 /*** IDs ***/
 /* General */
-#contactBar {
-    .container {
-        padding-left: 0; 
-        padding-right: 0;
-        flex-wrap: wrap;
-        a:first-child {
-            margin-top: .5rem;
-        }
-        a:nth-child(2) {
-            //collapse nicely
-            margin: .5rem 0;
-        }
-    }
-    a {
-        color: $primary;
-        padding: 0 1rem;
-    }
-    a:hover {
-        color: $secondary;
-    }
-}
 #mainNavFlexWrapper {
     display: flex;
     justify-content: space-between;
