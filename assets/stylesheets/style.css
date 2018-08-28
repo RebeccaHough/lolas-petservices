@@ -12,25 +12,6 @@ a:hover {
 
 /*** IDs ***/
 /* General */
-#contactBar .container {
-  padding-left: 0;
-  padding-right: 0;
-  flex-wrap: wrap;
-}
-#contactBar .container a:first-child {
-  margin-top: 0.5rem;
-}
-#contactBar .container a:nth-child(2) {
-  margin: 0.5rem 0;
-}
-#contactBar a {
-  color: #4dbec6;
-  padding: 0 1rem;
-}
-#contactBar a:hover {
-  color: #4d6a79;
-}
-
 #mainNavFlexWrapper {
   display: flex;
   justify-content: space-between;
@@ -112,41 +93,6 @@ a:hover {
   background-color: #4dbec6;
   padding-bottom: 3px;
   border-bottom: 3px solid;
-}
-
-#indexHeader {
-  height: 520px;
-  margin-bottom: 0;
-  border-bottom: 7px #4dbec6 solid;
-  background-image: url(../images/lola_beach.jpg);
-  background-repeat: no-repeat;
-  background-position: center calc(38%);
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #ffffff;
-}
-#indexHeader h1 {
-  line-height: 2.4;
-  font-family: "Amarillo", "Comic Sans MS", cursive, sans-serif;
-}
-
-#header {
-  height: 150px;
-  margin-bottom: 0;
-  color: #ffffff;
-}
-#header h1 {
-  line-height: 2.4;
-  font-family: "Amarillo", "Comic Sans MS", cursive, sans-serif;
-}
-#header .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 #footer {
@@ -294,74 +240,14 @@ a:hover {
 }
 
 /* Colour classes */
-.orange.border-color {
-  border-color: #ec9137 !important;
+.white.border-color {
+  border-color: #ffffff !important;
 }
-.orange.background {
-  background-color: #ec9137;
+.white.background {
+  background-color: #ffffff;
 }
-.orange .dot {
-  background-color: #ec9137;
-}
-
-.yellow.border-color {
-  border-color: #eec45e !important;
-}
-.yellow.background {
-  background-color: #eec45e;
-}
-.yellow .dot {
-  background-color: #eec45e;
-}
-
-.green.border-color {
-  border-color: #71da47 !important;
-}
-.green.background {
-  background-color: #71da47;
-}
-.green .dot {
-  background-color: #71da47;
-}
-
-.pink.border-color {
-  border-color: #fcb0b3 !important;
-}
-.pink.background {
-  background-color: #fcb0b3;
-}
-.pink .dot {
-  background-color: #fcb0b3;
-}
-
-.brown.border-color {
-  border-color: #794e45 !important;
-}
-.brown.background {
-  background-color: #794e45;
-}
-.brown .dot {
-  background-color: #794e45;
-}
-
-.purple.border-color {
-  border-color: #a59ee7 !important;
-}
-.purple.background {
-  background-color: #a59ee7;
-}
-.purple .dot {
-  background-color: #a59ee7;
-}
-
-.dark-blue.border-color {
-  border-color: #3776f3 !important;
-}
-.dark-blue.background {
-  background-color: #3776f3;
-}
-.dark-blue .dot {
-  background-color: #3776f3;
+.white .dot {
+  background-color: #ffffff;
 }
 
 /* Media Queries */
