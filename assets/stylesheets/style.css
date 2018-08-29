@@ -12,25 +12,6 @@ a:hover {
 
 /*** IDs ***/
 /* General */
-#contactBar .container {
-  padding-left: 0;
-  padding-right: 0;
-  flex-wrap: wrap;
-}
-#contactBar .container a:first-child {
-  margin-top: 0.5rem;
-}
-#contactBar .container a:nth-child(2) {
-  margin: 0.5rem 0;
-}
-#contactBar a {
-  color: #4dbec6;
-  padding: 0 1rem;
-}
-#contactBar a:hover {
-  color: #4d6a79;
-}
-
 #mainNavFlexWrapper {
   display: flex;
   justify-content: space-between;
@@ -112,41 +93,6 @@ a:hover {
   background-color: #4dbec6;
   padding-bottom: 3px;
   border-bottom: 3px solid;
-}
-
-#indexHeader {
-  height: 520px;
-  margin-bottom: 0;
-  border-bottom: 7px #4dbec6 solid;
-  background-image: url(../images/lola_beach.jpg);
-  background-repeat: no-repeat;
-  background-position: center calc(38%);
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #ffffff;
-}
-#indexHeader h1 {
-  line-height: 2.4;
-  font-family: "Amarillo", "Comic Sans MS", cursive, sans-serif;
-}
-
-#header {
-  height: 150px;
-  margin-bottom: 0;
-  color: #ffffff;
-}
-#header h1 {
-  line-height: 2.4;
-  font-family: "Amarillo", "Comic Sans MS", cursive, sans-serif;
-}
-#header .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 #footer {
