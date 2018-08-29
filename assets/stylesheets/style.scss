@@ -228,12 +228,29 @@ a {
 }
 
 /* Colour classes */
+.white {
+    &.border-color {
+        border-color: $white !important;
+    }
+    &.background {
+        background-color: $white;
+    }
+    .fas {
+        color: $white;
+    }
+    .dot {
+        background-color: $white;
+    }
+}
 .orange {
     &.border-color {
         border-color: $orange !important;
     }
     &.background {
         background-color: $orange;
+    }
+    .fas {
+        color: $orange;
     }
     .dot {
         background-color: $orange;
@@ -246,6 +263,9 @@ a {
     &.background {
         background-color: $yellow;
     }
+    .fas {
+        color: $yellow;
+    }
     .dot {
         background-color: $yellow;
     }
@@ -256,6 +276,9 @@ a {
     }
     &.background {
         background-color: $green;
+    }
+    .fas {
+        color: $green;
     }
     .dot {
         background-color: $green;
@@ -268,6 +291,9 @@ a {
     &.background {
         background-color: $pink;
     }
+    .fas {
+        color: $pink;
+    }
     .dot {
         background-color: $pink;
     }
@@ -278,6 +304,9 @@ a {
     }
     &.background {
         background-color: $brown;
+    }
+    .fas {
+        color: $brown;
     }
     .dot {
         background-color: $brown;
@@ -290,6 +319,9 @@ a {
     &.background {
         background-color: $purple;
     }
+    .fas {
+        color: $purple;
+    }
     .dot {
         background-color: $purple;
     }
@@ -300,6 +332,9 @@ a {
     }
     &.background {
         background-color: $dark-blue;
+    }
+    .fas {
+        color: $dark-blue;
     }
     .dot {
         background-color: $dark-blue;

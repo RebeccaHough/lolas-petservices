@@ -240,11 +240,27 @@ a:hover {
 }
 
 /* Colour classes */
+.white.border-color {
+  border-color: #ffffff !important;
+}
+.white.background {
+  background-color: #ffffff;
+}
+.white .fas {
+  color: #ffffff;
+}
+.white .dot {
+  background-color: #ffffff;
+}
+
 .orange.border-color {
   border-color: #ec9137 !important;
 }
 .orange.background {
   background-color: #ec9137;
+}
+.orange .fas {
+  color: #ec9137;
 }
 .orange .dot {
   background-color: #ec9137;
@@ -256,6 +272,9 @@ a:hover {
 .yellow.background {
   background-color: #eec45e;
 }
+.yellow .fas {
+  color: #eec45e;
+}
 .yellow .dot {
   background-color: #eec45e;
 }
@@ -265,6 +284,9 @@ a:hover {
 }
 .green.background {
   background-color: #71da47;
+}
+.green .fas {
+  color: #71da47;
 }
 .green .dot {
   background-color: #71da47;
@@ -276,6 +298,9 @@ a:hover {
 .pink.background {
   background-color: #fcb0b3;
 }
+.pink .fas {
+  color: #fcb0b3;
+}
 .pink .dot {
   background-color: #fcb0b3;
 }
@@ -285,6 +310,9 @@ a:hover {
 }
 .brown.background {
   background-color: #794e45;
+}
+.brown .fas {
+  color: #794e45;
 }
 .brown .dot {
   background-color: #794e45;
@@ -296,6 +324,9 @@ a:hover {
 .purple.background {
   background-color: #a59ee7;
 }
+.purple .fas {
+  color: #a59ee7;
+}
 .purple .dot {
   background-color: #a59ee7;
 }
@@ -305,6 +336,9 @@ a:hover {
 }
 .dark-blue.background {
   background-color: #3776f3;
+}
+.dark-blue .fas {
+  color: #3776f3;
 }
 .dark-blue .dot {
   background-color: #3776f3;
