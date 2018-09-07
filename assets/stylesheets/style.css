@@ -1,53 +1,17 @@
-/* Variables */
-/* Mixins */
-/* use like
-
-.thing-to-style { @include primary }
-
-can  also do --- MAYBE use this to choose seconadry, or priamry, though it may not work because of variable accessing syntax??
-
-@mixin transform($property) {
-  -webkit-transform: $property;
-      -ms-transform: $property;
-          transform: $property;
-}
-
-.box { @include transform(rotate(30deg)); }  
-
-*/
 @font-face {
-  font-family: "LolasFont";
-  src: url(../fonts/Amarillo.otf) format("opentype"), url(../fonts/Amarillo.ttf) format("truetype"), local("Arial"), local("sans-serif");
+  font-family: "Amarillo";
+  src: url(../fonts/Amarillo.otf) format("opentype"), url(../fonts/Amarillo.ttf) format("truetype");
 }
+/*** Elements ***/
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: none !important;
+}
+
 /*** IDs ***/
 /* General */
-#contactBar .container {
-  padding-left: 0;
-  padding-right: 0;
-}
-#contactBar a {
-  color: #4dbec6;
-}
-#contactBar a:hover {
-  color: #4d6a79;
-}
-
-#header {
-  height: 520px;
-  margin-bottom: 0;
-  border-bottom: 7px #4dbec6 solid;
-  background-image: url(../images/lola_beach.jpg);
-  background-repeat: no-repeat;
-  background-position: center calc(38%);
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #ffffff;
-  font-family: "LolasFont";
-}
-
 #mainNavFlexWrapper {
   display: flex;
   justify-content: space-between;
@@ -70,6 +34,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 #mainNav {
   padding: 0 15px;
   background-color: #4dbec6;
+  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
 }
 #mainNav .container {
   padding: 0;
@@ -157,7 +122,8 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   font-size: 1.15rem;
 }
 #footer #footerCopyright {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 /* Page specific IDs */
@@ -195,42 +161,20 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   padding: 1rem calc(1rem + 15px) 1rem calc(1rem + 15px);
 }
 .circle-container .circle {
-  text-align: center;
+  width: 100%;
 }
-.circle-container .circle a {
-  margin: 1rem;
-}
-.circle-container .circle a .fa-circle {
-  color: #4dbec6;
-}
-.circle-container .circle a .fa-paw {
-  color: #ffffff;
-}
-
-.circle-text {
-  width: 50%;
-}
-
-.circle-text:after {
-  content: "";
+.circle-container .circle .dot {
   display: block;
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;
-  background: #4679BD;
-  border-radius: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
+  margin: 1rem auto;
+  overflow: hidden;
+  background-color: #4dbec6;
 }
-
-.circle-text div {
-  float: left;
-  width: 100%;
-  padding-top: 50%;
-  line-height: 1em;
-  margin-top: -0.5em;
-  text-align: center;
-  color: white;
+.circle-container .circle img {
+  display: block;
+  margin: 15% auto;
+  width: 70%;
 }
 
 .circle-img {
@@ -243,6 +187,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   float: right;
 }
 
+/* Container for non-square circle images, use `top` and `left` inline to position */
 .circle-img-container {
   overflow: hidden;
   position: relative;
@@ -295,74 +240,14 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
 }
 
 /* Colour classes */
-.orange.border-color {
-  border-color: #ec9137 !important;
+.white.border-color {
+  border-color: #ffffff !important;
 }
-.orange.background {
-  background-color: #ec9137;
+.white.background {
+  background-color: #ffffff;
 }
-.orange .dot {
-  background-color: #ec9137;
-}
-
-.yellow.border-color {
-  border-color: #eec45e !important;
-}
-.yellow.background {
-  background-color: #eec45e;
-}
-.yellow .dot {
-  background-color: #eec45e;
-}
-
-.green.border-color {
-  border-color: #71da47 !important;
-}
-.green.background {
-  background-color: #71da47;
-}
-.green .dot {
-  background-color: #71da47;
-}
-
-.pink.border-color {
-  border-color: #fcb0b3 !important;
-}
-.pink.background {
-  background-color: #fcb0b3;
-}
-.pink .dot {
-  background-color: #fcb0b3;
-}
-
-.brown.border-color {
-  border-color: #794e45 !important;
-}
-.brown.background {
-  background-color: #794e45;
-}
-.brown .dot {
-  background-color: #794e45;
-}
-
-.purple.border-color {
-  border-color: #a59ee7 !important;
-}
-.purple.background {
-  background-color: #a59ee7;
-}
-.purple .dot {
-  background-color: #a59ee7;
-}
-
-.dark-blue.border-color {
-  border-color: #3776f3 !important;
-}
-.dark-blue.background {
-  background-color: #3776f3;
-}
-.dark-blue .dot {
-  background-color: #3776f3;
+.white .dot {
+  background-color: #ffffff;
 }
 
 /* Media Queries */
@@ -383,13 +268,11 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   }
 }
 @media only screen and (max-width: 991px) {
-  #header {
-    display: none;
-  }
-
   #mainNav {
-    background-color: #4dbec6 !important;
     position: static !important;
+  }
+  #mainNav .navbar-brand > img {
+    height: 70px;
   }
   #mainNav .navbar-brand.appear-md {
     display: block !important;
@@ -399,6 +282,7 @@ can  also do --- MAYBE use this to choose seconadry, or priamry, though it may n
   }
   #mainNav #mainNavFlexWrapper {
     display: block !important;
+    padding-bottom: 10px;
   }
   #mainNav #mainNavFlexWrapper > div {
     display: block !important;
