@@ -148,6 +148,15 @@ a:hover {
   height: 100%;
   padding: 0;
 }
+#serviceAreaMap #mobileServiceArea {
+  display: block;
+}
+#serviceAreaMap #middleServiceArea {
+  display: none;
+}
+#serviceAreaMap #desktopServiceArea {
+  display: none;
+}
 
 /*** Classes ***/
 .dot {
@@ -257,22 +266,6 @@ a:hover {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 460px) {
-  .quote-container {
-    padding: 60px 2%;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .circle-container .right-padded {
-    padding-right: 18% !important;
-  }
-  .circle-container .left-padded {
-    padding-left: 18% !important;
-  }
-  .circle-container .row > div {
-    padding: 0 15px 0 15px;
-  }
-}
 @media only screen and (max-width: 991px) {
   #mainNav {
     position: static !important;
@@ -292,6 +285,45 @@ a:hover {
   }
   #mainNav #mainNavFlexWrapper > div {
     display: block !important;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .quote-container {
+    padding: 60px 2%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .circle-container .right-padded {
+    padding-right: 18% !important;
+  }
+  .circle-container .left-padded {
+    padding-left: 18% !important;
+  }
+  .circle-container .row > div {
+    padding: 0 15px 0 15px;
+  }
+}
+/* Service Area Map */
+@media only screen and (min-width: 1200px) {
+  #serviceAreaMap #mobileServiceArea {
+    display: none;
+  }
+  #serviceAreaMap #middleServiceArea {
+    display: none;
+  }
+  #serviceAreaMap #desktopServiceArea {
+    display: block;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 1200px) {
+  #serviceAreaMap #mobileServiceArea {
+    display: none;
+  }
+  #serviceAreaMap #middleServiceArea {
+    display: block;
+  }
+  #serviceAreaMap #desktopServiceArea {
+    display: none;
   }
 }
 
