@@ -143,7 +143,26 @@ a:hover {
   border: 0;
 }
 
+#serviceAreaMap {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+#serviceAreaMap #mobileServiceArea {
+  display: block;
+}
+#serviceAreaMap #middleServiceArea {
+  display: none;
+}
+#serviceAreaMap #desktopServiceArea {
+  display: none;
+}
+
 /*** Classes ***/
+.fa-paw {
+  transform: translate(0, 0) scale(1, 1) rotate(18deg);
+}
+
 .dot {
   height: 0.75rem;
   width: 0.75rem;
@@ -277,35 +296,8 @@ a:hover {
   background-color: #ffffff;
 }
 
-/* Media Queries */
-@media only screen and (max-width: 460px) {
-  .quote-container {
-    padding: 60px 2%;
-  }
-}
-@media only screen and (min-width: 576px) {
-  .circle-container .right-padded {
-    padding-right: 18% !important;
-  }
-  .circle-container .left-padded {
-    padding-left: 18% !important;
-  }
-  .circle-container .row > div {
-    padding: 0 15px 0 15px;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .divider {
-    width: 70%;
-    margin: 5px auto;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .divider {
-    width: 55%;
-    margin: 5px auto;
-  }
-}
+/*** Media Queries ***/
+/* Mobile */
 @media only screen and (max-width: 991px) {
   #mainNav {
     position: static !important;
@@ -325,6 +317,56 @@ a:hover {
   }
   #mainNav #mainNavFlexWrapper > div {
     display: block !important;
+  }
+}
+@media only screen and (max-width: 460px) {
+  .quote-container {
+    padding: 60px 2%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  .circle-container .right-padded {
+    padding-right: 18% !important;
+  }
+  .circle-container .left-padded {
+    padding-left: 18% !important;
+  }
+  .circle-container .row > div {
+    padding: 0 15px 0 15px;
+  }
+}
+/* Small desktop */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .divider {
+    width: 70%;
+    margin: 5px auto;
+  }
+
+  #serviceAreaMap #mobileServiceArea {
+    display: none;
+  }
+  #serviceAreaMap #middleServiceArea {
+    display: block;
+  }
+  #serviceAreaMap #desktopServiceArea {
+    display: none;
+  }
+}
+/* Large desktop */
+@media only screen and (min-width: 1200px) {
+  .divider {
+    width: 55%;
+    margin: 5px auto;
+  }
+
+  #serviceAreaMap #mobileServiceArea {
+    display: none;
+  }
+  #serviceAreaMap #middleServiceArea {
+    display: none;
+  }
+  #serviceAreaMap #desktopServiceArea {
+    display: block;
   }
 }
 
