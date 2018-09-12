@@ -159,6 +159,10 @@ a:hover {
 }
 
 /*** Classes ***/
+.fa-paw {
+  transform: translate(0, 0) scale(1, 1) rotate(18deg);
+}
+
 .dot {
   height: 0.75rem;
   width: 0.75rem;

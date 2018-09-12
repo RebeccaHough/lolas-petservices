@@ -39,9 +39,9 @@ a {
     button {
         color: $white; 
         border: none !important;
-    }
-    button:focus {
-        outline-color: $light-grey;
+        &:focus {
+            outline-color: $light-grey;
+        }
     }
     .navbar-brand.appear-md {
         display: none !important;
@@ -53,13 +53,15 @@ a {
         border-bottom: 3px solid;
         padding-bottom: 0 !important;
     }
-    .nav-link:not(.navbar-brand) {
-        padding: .75rem;
-        text-transform: uppercase;
-        color: $light-grey;
-    }
-    .nav-link.dropdown-link {
-        padding-bottom: calc(.75rem + 3px) !important;
+    .nav-link {
+        &:not(.navbar-brand) {
+            padding: .75rem;
+            text-transform: uppercase;
+            color: $light-grey;
+        }
+        &.dropdown-link {
+            padding-bottom: calc(.75rem + 3px) !important;
+        }
     }
     .active .nav-link.dropdown-link, .nav-link.dropdown-link:hover {
         border-bottom: 3px solid;
@@ -155,6 +157,9 @@ a {
 }
 
 /*** Classes ***/
+.fa-paw {
+    transform: translate(0, 0) scale(1, 1) rotate(18deg);
+}
 .dot {
     height: .75rem;
     width: .75rem;
