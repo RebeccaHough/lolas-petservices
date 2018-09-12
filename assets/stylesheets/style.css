@@ -239,6 +239,33 @@ a:hover {
   background-color: #ffffff;
 }
 
+.divider {
+  margin: 5px 0;
+  overflow: hidden;
+  text-align: center;
+}
+.divider:before, .divider:after {
+  background-color: #bbbbbb;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+.divider:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.divider:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.divider .fa-paw {
+  color: #4dbec6;
+  font-size: 1.2rem;
+}
+
 /* Colour classes */
 .white.border-color {
   border-color: #ffffff !important;
@@ -265,6 +292,18 @@ a:hover {
   }
   .circle-container .row > div {
     padding: 0 15px 0 15px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .divider {
+    width: 70%;
+    margin: 5px auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .divider {
+    width: 55%;
+    margin: 5px auto;
   }
 }
 @media only screen and (max-width: 991px) {

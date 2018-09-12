@@ -226,6 +226,34 @@ a {
 .bg-white {
     background-color: $white;
 }
+ 
+.divider {
+    margin: 5px 0;
+    overflow: hidden;
+    text-align: center;
+    &:before,
+    &:after {
+        background-color: $grey;
+        content: "";
+        display: inline-block;
+        height: 1px;
+        position: relative;
+        vertical-align: middle;
+        width: 50%;
+    }
+    &:before {
+        right: 0.5em;
+        margin-left: -50%;
+    }
+    &:after {
+        left: 0.5em;
+        margin-right: -50%;
+    }
+    .fa-paw {
+        color: $primary;
+        font-size: 1.2rem;
+    }
+}
 
 /* Colour classes */
 .white {
@@ -241,7 +269,6 @@ a {
 }
 
 /* Media Queries */
-// @media only screen and (min-width: 768px) {}
 @media only screen and (max-width: 460px) {
     .quote-container {
         padding: 60px 2%;
@@ -258,6 +285,18 @@ a {
         .row > div {
             padding: 0 15px 0 15px;
         }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+    .divider {
+        width: 70%;
+        margin: 5px auto;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .divider {
+        width: 55%;
+        margin: 5px auto;
     }
 }
 @media only screen and (max-width: 991px) {
