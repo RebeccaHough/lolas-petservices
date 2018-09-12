@@ -155,7 +155,7 @@ a:hover {
 }
 
 /*** Classes ***/
-.fa-paw {
+.rotate-paws .fa-paw {
   transform: translate(0, 0) scale(1, 1) rotate(18deg);
 }
 
