@@ -157,8 +157,10 @@ a {
 }
 
 /*** Classes ***/
-.fa-paw {
-    transform: translate(0, 0) scale(1, 1) rotate(18deg);
+.rotate-paws {
+    .fa-paw {
+        transform: translate(0, 0) scale(1, 1) rotate(18deg);
+    }
 }
 .dot {
     height: .75rem;
