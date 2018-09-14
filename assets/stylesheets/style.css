@@ -49,24 +49,13 @@ a:hover {
 #mainNav .navbar-brand.appear-md {
   display: none !important;
 }
-#mainNav .nav-item:not(.dropdown) {
-  padding-bottom: 3px;
-}
-#mainNav .active:not(.dropdown), #mainNav .nav-item:not(.dropdown):hover {
-  border-bottom: 3px solid;
-  padding-bottom: 0 !important;
-}
 #mainNav .nav-link:not(.navbar-brand) {
   padding: 0.75rem;
   text-transform: uppercase;
   color: #f6f6f6;
 }
-#mainNav .nav-link.dropdown-link {
-  padding-bottom: calc(.75rem + 3px) !important;
-}
-#mainNav .active .nav-link.dropdown-link, #mainNav .nav-link.dropdown-link:hover {
-  border-bottom: 3px solid;
-  padding-bottom: 0.75rem !important;
+#mainNav .active > .nav-link, #mainNav .nav-item:hover > .nav-link {
+  color: #5f5f5f;
 }
 #mainNav .navbar-brand {
   padding: 1rem 0.25rem;
@@ -91,8 +80,7 @@ a:hover {
 }
 #mainNav .dropdown-item:hover {
   background-color: #4dbec6;
-  padding-bottom: 3px;
-  border-bottom: 3px solid;
+  color: #5f5f5f;
 }
 
 #footer {
@@ -236,10 +224,6 @@ a:hover {
   height: 155px;
 }
 
-.icon-background {
-  color: #000000;
-}
-
 .quote-container {
   padding: 60px 14%;
   text-align: center;
@@ -297,17 +281,6 @@ a:hover {
 .divider .fa-paw {
   color: #4dbec6;
   font-size: 1.2rem;
-}
-
-/* Colour classes */
-.white.border-color {
-  border-color: #ffffff !important;
-}
-.white.background {
-  background-color: #ffffff;
-}
-.white .dot {
-  background-color: #ffffff;
 }
 
 /*** Media Queries ***/
