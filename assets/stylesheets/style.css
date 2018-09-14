@@ -149,12 +149,24 @@ a:hover {
   padding: 0;
   margin: 0;
   overflow: hidden;
-  background-image: url(../images/map_circle_mobile_zoom.png);
+  background-image: url(../images/map_mobile.png);
   background-size: cover;
   background-position: center center;
+  background-repeat: no-repeat;
 }
 
 /*** Classes ***/
+.bgImage {
+  width: 100%;
+  height: 520px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .rotate-paws .fa-paw {
   transform: translate(0, 0) scale(0.9, 0.9) rotate(18deg);
 }
@@ -218,14 +230,6 @@ a:hover {
 
 .icon-background {
   color: #000000;
-}
-
-.services-info {
-  border-top: 60px solid transparent;
-  margin-top: -60px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
-  background-clip: padding-box;
 }
 
 .quote-container {
@@ -340,7 +344,7 @@ a:hover {
 
   #locationMap {
     height: 600px;
-    background-image: url(../images/map_circle_middle_zoom.png);
+    background-image: url(../images/map_small_desktop.png);
   }
 }
 /* Large desktop */
@@ -351,8 +355,8 @@ a:hover {
   }
 
   #locationMap {
-    height: 750px;
-    background-image: url(../images/map_circle_desktop_zoom.png);
+    height: 700px;
+    background-image: url(../images/map_desktop.png);
   }
 }
 
