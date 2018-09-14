@@ -282,6 +282,12 @@ a:hover {
   left: 0.5em;
   margin-right: -50%;
 }
+.divider.top {
+  margin-top: 2rem;
+}
+.divider.bottom {
+  margin-bottom: 2rem;
+}
 .divider .fa-paw {
   color: #4dbec6;
   font-size: 1.2rem;
