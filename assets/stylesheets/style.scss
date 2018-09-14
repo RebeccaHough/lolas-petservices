@@ -276,6 +276,13 @@ a {
         left: 0.5em;
         margin-right: -50%;
     }
+    //add top or bottom margin
+    &.top {
+        margin-top: 2rem;
+    }
+    &.bottom {
+        margin-bottom: 2rem;
+    }
     .fa-paw {
         color: $primary;
         font-size: 1.2rem;

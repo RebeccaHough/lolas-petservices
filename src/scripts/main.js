@@ -1,5 +1,8 @@
 $('document').ready(function() {
 
+    /* Prevent margin collapse */
+    $('.container:has(.divider.top, .divider.bottom)').css('overflow', 'hidden');
+
     /** Inital dropdown setup */
     setupDropdown();
 
