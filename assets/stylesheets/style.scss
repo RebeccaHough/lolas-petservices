@@ -153,14 +153,16 @@ a {
 }
 
 /*** Classes ***/
-.bgImage {
+.bg-image {
     width: 100%;
-    height: 520px;
+    height: 300px;
+    max-width: 1200px;
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     overflow: hidden;
+    position: relative;
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
 }
 .rotate-paws {
@@ -341,6 +343,9 @@ a {
         height: 600px;
         background-image: url(../images/map_small_desktop.png);
     }
+    .bg-image {
+        height: 400px;
+    }
 }
 /* Large desktop */
 @media only screen and (min-width: 1200px) {
@@ -351,5 +356,8 @@ a {
     #locationMap {
         height: 700px;
         background-image: url(../images/map_desktop.png);
+    }
+    .bg-image {
+        height: 500px;
     }
 }
