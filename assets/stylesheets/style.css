@@ -168,6 +168,12 @@ a:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
+.bg-image.top-of-image {
+  background-position: center top;
+}
+.bg-image.kristie {
+  height: 350px;
+}
 
 .rotate-paws .fa-paw {
   transform: translate(0, 0) scale(0.9, 0.9) rotate(18deg);
@@ -358,6 +364,9 @@ a:hover {
   .bg-image {
     height: 400px;
   }
+  .bg-image.kristie {
+    height: 500px;
+  }
 }
 /* Large desktop */
 @media only screen and (min-width: 1200px) {
@@ -373,6 +382,9 @@ a:hover {
 
   .bg-image {
     height: 500px;
+  }
+  .bg-image.kristie {
+    height: 650px;
   }
 }
 

@@ -164,6 +164,12 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    &.top-of-image {
+        background-position: center top;
+    }
+    &.kristie {
+        height: 350px;
+    }
 }
 .rotate-paws {
     .fa-paw {
@@ -352,6 +358,9 @@ a {
     }
     .bg-image {
         height: 400px;
+        &.kristie {
+            height: 500px;
+        }
     }
 }
 /* Large desktop */
@@ -366,5 +375,8 @@ a {
     }
     .bg-image {
         height: 500px;
+        &.kristie {
+            height: 650px;
+        }
     }
 }
