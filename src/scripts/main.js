@@ -92,41 +92,45 @@ $('document').ready(function() {
     // });
 
     //instagram feed (won't work from 2020+)
-    // get: 'user',
-    //     userId: '8383337896',
-    //     accessToken: 'YOUR_ACCESS_TOKEN'
     // var feed = new Instafeed({
     //     //clientId: 'YOUR_CLIENT_ID',
     //     get: 'user',
     //     userId: '8383337896',
-    //     target: 'instagramFeed',
-    //     sortBy: 'most-recent',
-    //     resolution: 'standard_resolution',
-    //     links: true,
-    //     after: (function() {
-    //         //TODO remove placeholder content
-    //     })
-    // });
-    // feed.run();
+    //     accessToken: 'YOUR_ACCESS_TOKEN'
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '8383337896',
+        accessToken: '8383337896.1677ed0.0afd711d80ef49f7950ea697b2843e11',
+        target: 'instagramFeed',
+        sortBy: 'most-recent',
+        resolution: 'standard_resolution',
+        links: true,
+        after: (function() {
+            //TODO remove placeholder content
+        })
+    });
+    feed.run();
 
     /*
-        var loadButton = document.getElementById('load-more');
-        var feed = new Instafeed({
-            // every time we load more, run this function
-            after: function() {
-                // disable button if no more results to load
-                if (!this.hasNext()) {
-                    loadButton.setAttribute('disabled', 'disabled');
-                }
-            },
-        });
+    Instagram feed pagination
 
-        // bind the load more button
-        loadButton.addEventListener('click', function() {
-            feed.next();
-        });
+    var loadButton = document.getElementById('load-more');
+    var feed = new Instafeed({
+        // every time we load more, run this function
+        after: function() {
+            // disable button if no more results to load
+            if (!this.hasNext()) {
+                loadButton.setAttribute('disabled', 'disabled');
+            }
+        },
+    });
 
-        // run our feed!
-        feed.run();
+    // bind the load more button
+    loadButton.addEventListener('click', function() {
+        feed.next();
+    });
+
+    // run our feed!
+    feed.run();
     */
 });
