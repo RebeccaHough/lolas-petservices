@@ -100,7 +100,24 @@ $('document').ready(function() {
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
         links: true,
-        template: '<div class="col-lg-3 insta-img"><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
+        template: `
+            <div class="col-lg-3 insta-img">
+                <a 
+                    href="{{image}}" 
+                    title="
+                        <p style='padding-right: 10px; margin-bottom: 0'>
+                         {{caption}}
+                        </p>
+                        <a href='{{link}}' style='float: right'>
+                            View on Instagram &nbsp;<span class='fas fa-external-link-alt fa-sm'></span>&nbsp;&nbsp;
+                        </a>
+                    "
+                    target="_blank"><img src="{{image}}" 
+                    alt="{{caption}}" 
+                    class="img-fluid"
+                /></a>
+            </div>
+        `,
         after: (function() {
             //TODO remove placeholder content
         })

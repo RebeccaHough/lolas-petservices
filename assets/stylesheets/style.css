@@ -3,11 +3,9 @@
   src: url(../fonts/Amarillo.otf) format("opentype"), url(../fonts/Amarillo.ttf) format("truetype");
 }
 /*** Elements ***/
-a {
-  text-decoration: none !important;
-}
-a:hover {
-  text-decoration: none !important;
+body {
+  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+  color: #4a4a4a;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,8 +13,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #4a4a4a;
 }
 
-p, a {
-  font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
+a {
+  text-decoration: none !important;
+  color: #4dbec6;
+}
+a:hover {
+  text-decoration: none !important;
+  color: #4d6a79;
+}
+
+p a {
   color: #4a4a4a;
 }
 

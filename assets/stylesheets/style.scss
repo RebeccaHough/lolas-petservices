@@ -1,18 +1,23 @@
 @import 'variables.scss';
 
 /*** Elements ***/
-a {
-    text-decoration: none !important;
-    &:hover {
-        text-decoration: none !important;
-    }
+body {
+    font-family: $font-stack-body;
+    color: $dark-grey;
 }
 h1, h2, h3, h4, h5, h6, {
     font-family: $font-stack-title;
     color: $dark-grey;
 }
-p, a {
-    font-family: $font-stack-body;
+a {
+    text-decoration: none !important;
+    color: $primary;
+    &:hover {
+        text-decoration: none !important;
+        color: $secondary;
+    }
+}
+p a {
     color: $dark-grey;
 }
 
