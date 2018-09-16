@@ -91,12 +91,7 @@ $('document').ready(function() {
     //     imageSrc: '../assets/images/lola_beach.jpg'
     // });
 
-    //instagram feed (won't work from 2020+)
-    // var feed = new Instafeed({
-    //     //clientId: 'YOUR_CLIENT_ID',
-    //     get: 'user',
-    //     userId: '8383337896',
-    //     accessToken: 'YOUR_ACCESS_TOKEN'
+    /* Instagram feed (won't work from 2020+) */
     var feed = new Instafeed({
         get: 'user',
         userId: '8383337896',
@@ -105,11 +100,22 @@ $('document').ready(function() {
         sortBy: 'most-recent',
         resolution: 'standard_resolution',
         links: true,
+        template: '<div class="col-lg-3 insta-img"><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
         after: (function() {
             //TODO remove placeholder content
         })
     });
     feed.run();
+
+    /* Magnific Popup */
+    /* Creates a single gallery with all elements that have class "gallery" */
+    $('.gallery').magnificPopup({
+        type: 'image',
+        delegate: 'a',
+        gallery: {
+            enabled: true
+        }
+    });
 
     /*
     Instagram feed pagination
