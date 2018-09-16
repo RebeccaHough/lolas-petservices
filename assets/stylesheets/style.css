@@ -2,6 +2,10 @@
   font-family: "Amarillo";
   src: url(../fonts/Amarillo.otf) format("opentype"), url(../fonts/Amarillo.ttf) format("truetype");
 }
+@font-face {
+  font-family: "CenturyGothic";
+  src: url(../fonts/CenturyGothic.ttf) format("truetype");
+}
 /*** Elements ***/
 body {
   font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;

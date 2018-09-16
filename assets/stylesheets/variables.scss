@@ -3,6 +3,11 @@
     src: url(../fonts/Amarillo.otf) format("opentype"),
         url(../fonts/Amarillo.ttf) format("truetype");
 }
+@font-face {
+    font-family: "CenturyGothic";
+    src: url(../fonts/CenturyGothic.ttf) format("truetype");
+}
+
 
 // Colour Variables
 $orange: #ec9137;
