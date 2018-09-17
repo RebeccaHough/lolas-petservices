@@ -136,15 +136,21 @@ p a {
 /* Services */
 #pricesSection {
     padding: 50px 0;
+    h1, h2, h3, h4, h5, h6, p, div, a {
+        color: $white;
+    }
+    a:hover {
+        h1, h2, h3, h4, h5, h6 {
+            color: $primary;
+        }
+    }
     &> div {
+        // bootstrap columns
         height: 450px;
         margin: 0 5px;
         padding: 0;
         @include coverBackground();
-        &> div {
-            color: white;
-            text-align: center;
-        }
+        text-align: center;
     }
 }
 /* Gallery */

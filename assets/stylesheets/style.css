@@ -140,6 +140,12 @@ p a {
 #pricesSection {
   padding: 50px 0;
 }
+#pricesSection h1, #pricesSection h2, #pricesSection h3, #pricesSection h4, #pricesSection h5, #pricesSection h6, #pricesSection p, #pricesSection div, #pricesSection a {
+  color: #ffffff;
+}
+#pricesSection a:hover h1, #pricesSection a:hover h2, #pricesSection a:hover h3, #pricesSection a:hover h4, #pricesSection a:hover h5, #pricesSection a:hover h6 {
+  color: #4dbec6;
+}
 #pricesSection > div {
   height: 450px;
   margin: 0 5px;
@@ -148,9 +154,6 @@ p a {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-}
-#pricesSection > div > div {
-  color: white;
   text-align: center;
 }
 
