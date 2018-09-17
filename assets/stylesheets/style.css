@@ -147,8 +147,9 @@ p a {
   color: #4dbec6;
 }
 #pricesSection > div {
-  height: 450px;
-  margin: 0 5px;
+  height: 250px;
+  max-width: 250px;
+  margin: auto;
   padding: 0;
   background-size: cover;
   background-position: center;
@@ -431,6 +432,11 @@ p a {
     background-image: url(../images/map_small_desktop.png);
   }
 
+  #pricesSection > div {
+    height: 450px;
+    margin: 0 5px;
+  }
+
   .bg-image {
     height: 400px;
   }
@@ -448,6 +454,11 @@ p a {
   #locationMap {
     height: 700px;
     background-image: url(../images/map_desktop.png);
+  }
+
+  #pricesSection > div {
+    height: 450px;
+    margin: 0 5px;
   }
 
   .bg-image {

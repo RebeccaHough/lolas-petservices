@@ -145,9 +145,10 @@ p a {
         }
     }
     &> div {
-        // bootstrap columns
-        height: 450px;
-        margin: 0 5px;
+        // mobile first bootstrap columns
+        height: 250px;
+        max-width: 250px;
+        margin: auto;
         padding: 0;
         @include coverBackground();
         text-align: center;
@@ -413,6 +414,12 @@ p a {
         height: 600px;
         background-image: url(../images/map_small_desktop.png);
     }
+    #pricesSection {
+        &> div {
+            height: 450px;
+            margin: 0 5px;
+        }
+    }
     .bg-image {
         height: 400px;
         &.kristie {
@@ -429,6 +436,12 @@ p a {
     #locationMap {
         height: 700px;
         background-image: url(../images/map_desktop.png);
+    }
+    #pricesSection {
+        &> div {
+            height: 450px;
+            margin: 0 5px;
+        }
     }
     .bg-image {
         height: 500px;
