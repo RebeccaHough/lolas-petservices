@@ -73,7 +73,7 @@ p a {
         color: $light-grey;
     }
     .active > .nav-link, .nav-item:hover > .nav-link {
-        color: $dark-grey;
+        color: $primary-dark;
     }
     .navbar-brand {
         padding: 1rem .25rem;
@@ -133,6 +133,36 @@ p a {
     }
 }
 /* Page specific IDs */
+/* Services */
+#pricesSection {
+    padding: 50px 0;
+    &> div {
+        height: 450px;
+        margin: 0 5px;
+        padding: 0;
+        @include coverBackground();
+        &> div {
+            color: white;
+            text-align: center;
+        }
+    }
+}
+/* Gallery */
+#instagramFeed {
+    .insta-img {
+        a:focus {
+            outline: none;
+        }
+        img {
+            margin-bottom: 30px;
+            &:hover {
+                opacity:0.8;
+                -moz-opacity:0.8;
+                -webkit-opacity:0.8;
+            }
+        }
+    }
+}
 /* Location */
 #googleMaps {
     height: 60vh;
@@ -151,51 +181,33 @@ p a {
     background-image: url(../images/map_mobile.png);
     @include coverBackground();
 }
-/* Services */
-#pricesSection {
-    padding: 50px 0;
-    &> div {
-        height: 450px;
-        margin: 0 5px;
-        padding: 0;
-        @include coverBackground();
-        &> div {
-            color: white;
-            text-align: center;
-        }
-    }
-}
-.dim-overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-}
-.bottom {
-    //margin-top: auto;
-    justify-self: flex-end;
-}
 
 /*** Classes ***/
 .btn-info {
     background-color: $primary;
     border-color: $secondary;
+    color: $light-grey;
+    &:hover {
+        background-color: $primary-dark;
+        border-color: $primary-dark;
+        color: $light-grey;
+    }
 }
 .dim-overlay {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
 }
 .shadow-box {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
-.insta-img img {
-    margin-bottom: 30px;
-    &:hover {
-        opacity:0.8;
-        -moz-opacity:0.8;
-        -webkit-opacity:0.8;
-    }
+.drop-shadow {
+    filter: drop-shadow(0 1mm 0.3rem $grey);
 }
 .bg-image {
     width: 100%;

@@ -76,7 +76,7 @@ p a {
   color: #f6f6f6;
 }
 #mainNav .active > .nav-link, #mainNav .nav-item:hover > .nav-link {
-  color: #4a4a4a;
+  color: #138496;
 }
 #mainNav .navbar-brand {
   padding: 1rem 0.25rem;
@@ -136,6 +136,37 @@ p a {
 }
 
 /* Page specific IDs */
+/* Services */
+#pricesSection {
+  padding: 50px 0;
+}
+#pricesSection > div {
+  height: 450px;
+  margin: 0 5px;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+#pricesSection > div > div {
+  color: white;
+  text-align: center;
+}
+
+/* Gallery */
+#instagramFeed .insta-img a:focus {
+  outline: none;
+}
+#instagramFeed .insta-img img {
+  margin-bottom: 30px;
+}
+#instagramFeed .insta-img img:hover {
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+}
+
 /* Location */
 #googleMaps {
   height: 60vh;
@@ -159,58 +190,34 @@ p a {
   overflow: hidden;
 }
 
-/* Services */
-#pricesSection {
-  padding: 50px 0;
-}
-#pricesSection > div {
-  height: 450px;
-  margin: 0 5px;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-}
-#pricesSection > div > div {
-  color: white;
-  text-align: center;
-}
-
-.dim-overlay {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.bottom {
-  justify-self: flex-end;
-}
-
 /*** Classes ***/
 .btn-info {
   background-color: #4dbec6;
   border-color: #4d6a79;
+  color: #f6f6f6;
+}
+.btn-info:hover {
+  background-color: #138496;
+  border-color: #138496;
+  color: #f6f6f6;
 }
 
 .dim-overlay {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .shadow-box {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.insta-img img {
-  margin-bottom: 30px;
-}
-.insta-img img:hover {
-  opacity: 0.8;
-  -moz-opacity: 0.8;
-  -webkit-opacity: 0.8;
+.drop-shadow {
+  filter: drop-shadow(0 1mm 0.3rem #a7a7a7);
 }
 
 .bg-image {
@@ -239,7 +246,7 @@ p a {
 .dot {
   height: 0.75rem;
   width: 0.75rem;
-  background-color: #bbbbbb;
+  background-color: #a7a7a7;
   border-radius: 50%;
   display: inline-block;
   margin-left: 0.25rem;
@@ -325,7 +332,7 @@ p a {
   text-align: center;
 }
 .divider:before, .divider:after {
-  background-color: #bbbbbb;
+  background-color: #a7a7a7;
   content: "";
   display: inline-block;
   height: 1px;
