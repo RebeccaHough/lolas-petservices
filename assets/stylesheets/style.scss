@@ -153,6 +153,25 @@ p a {
         text-align: center;
     }
 }
+#bookingSection {
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: .3rem;
+    background-color: $primary;
+    .row { 
+        text-align: center;
+    }
+    a {
+        color: $light-grey;
+        font-size: 1.4rem;
+    }
+    a:hover {
+        color: $primary-dark;
+    }
+    span {
+        color: $primary-dark;
+    }
+}
 /* Gallery */
 #instagramFeed {
     .insta-img {

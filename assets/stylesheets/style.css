@@ -157,6 +157,26 @@ p a {
   text-align: center;
 }
 
+#bookingSection {
+  margin-bottom: 50px;
+  padding: 15px;
+  border-radius: 0.3rem;
+  background-color: #4dbec6;
+}
+#bookingSection .row {
+  text-align: center;
+}
+#bookingSection a {
+  color: #f6f6f6;
+  font-size: 1.4rem;
+}
+#bookingSection a:hover {
+  color: #138496;
+}
+#bookingSection span {
+  color: #138496;
+}
+
 /* Gallery */
 #instagramFeed .insta-img a:focus {
   outline: none;
