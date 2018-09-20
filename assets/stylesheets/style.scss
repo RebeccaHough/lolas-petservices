@@ -130,6 +130,9 @@ a {
     }
 }
 /* Page specific IDs */
+#ourServices {
+    padding-bottom: 20px;
+}
 /* Services */
 #pricesSection {
     padding: 50px 0;
@@ -208,6 +211,10 @@ a {
 }
 
 /*** Classes ***/
+.logoFont {
+    font-family: $font-stack-script;
+    color: $primary;
+}
 .btn-info {
     background-color: $primary;
     border-color: $secondary;

@@ -132,6 +132,10 @@ a:hover {
 }
 
 /* Page specific IDs */
+#ourServices {
+  padding-bottom: 20px;
+}
+
 /* Services */
 #pricesSection {
   padding: 50px 0;
@@ -214,6 +218,11 @@ a:hover {
 }
 
 /*** Classes ***/
+.logoFont {
+  font-family: "Amarillo", "Comic Sans MS", cursive, sans-serif;
+  color: #4dbec6;
+}
+
 .btn-info {
   background-color: #4dbec6;
   border-color: #4d6a79;
