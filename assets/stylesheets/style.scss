@@ -175,6 +175,8 @@ a {
 }
 /* Gallery */
 #instagramFeed {
+    margin-top: 40px;
+    padding: 0 20%;
     .insta-img {
         a:focus {
             outline: none;
@@ -408,9 +410,6 @@ a {
         border-top: 0px solid transparent;
         margin-top: 0px;
     }
-    #instagramFeed {
-        padding: 0 20%;
-    }
 }
 @media only screen and (max-width: 460px) {
     .quote-container {
@@ -428,6 +427,11 @@ a {
         .row > div {
             padding: 0 15px 0 15px;
         }
+    }
+}
+@media only screen and (min-width: 768px) {
+    #instagramFeed {
+        padding: 0;
     }
 }
 /* Small desktop */
