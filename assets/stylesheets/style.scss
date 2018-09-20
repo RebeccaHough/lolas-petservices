@@ -25,9 +25,6 @@ a {
         color: $secondary;
     }
 }
-p a {
-    color: $dark-grey;
-}
 
 /*** IDs ***/
 /* General */
@@ -187,6 +184,9 @@ p a {
             }
         }
     }
+}
+#followUs h1 span {
+    color: $primary;
 }
 /* Location */
 #googleMaps {

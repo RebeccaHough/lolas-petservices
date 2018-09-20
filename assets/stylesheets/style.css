@@ -27,10 +27,6 @@ a:hover {
   color: #4d6a79;
 }
 
-p a {
-  color: #4a4a4a;
-}
-
 /*** IDs ***/
 /* General */
 #mainNavFlexWrapper {
@@ -188,6 +184,10 @@ p a {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -webkit-opacity: 0.8;
+}
+
+#followUs h1 span {
+  color: #4dbec6;
 }
 
 /* Location */
