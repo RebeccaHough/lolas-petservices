@@ -72,7 +72,7 @@ a:hover {
   color: #f6f6f6;
 }
 #mainNav .active > .nav-link, #mainNav .nav-item:hover > .nav-link {
-  color: #138496;
+  color: #4a4a4a;
 }
 #mainNav .navbar-brand {
   padding: 1rem 0.25rem;
