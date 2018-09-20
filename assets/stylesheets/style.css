@@ -137,9 +137,6 @@ a:hover {
 }
 
 /* Services */
-#pricesSection {
-  padding: 50px 0;
-}
 #pricesSection h1, #pricesSection h2, #pricesSection h3, #pricesSection h4, #pricesSection h5, #pricesSection h6, #pricesSection p, #pricesSection div, #pricesSection a {
   color: #ffffff;
 }
@@ -352,7 +349,7 @@ a:hover {
 }
 
 .text-container {
-  padding: 60px 0px;
+  padding: 40px 0px;
 }
 
 .bg-grey {
