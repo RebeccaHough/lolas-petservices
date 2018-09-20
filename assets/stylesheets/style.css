@@ -137,25 +137,11 @@ p a {
 
 /* Page specific IDs */
 /* Services */
-#pricesSection {
-  padding: 50px 0;
-}
 #pricesSection h1, #pricesSection h2, #pricesSection h3, #pricesSection h4, #pricesSection h5, #pricesSection h6, #pricesSection p, #pricesSection div, #pricesSection a {
   color: #ffffff;
 }
 #pricesSection a:hover h1, #pricesSection a:hover h2, #pricesSection a:hover h3, #pricesSection a:hover h4, #pricesSection a:hover h5, #pricesSection a:hover h6 {
   color: #4dbec6;
-}
-#pricesSection > div {
-  height: 250px;
-  max-width: 250px;
-  margin: auto;
-  padding: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  text-align: center;
 }
 
 /* Gallery */
@@ -195,15 +181,18 @@ p a {
 }
 
 /*** Classes ***/
-.btn-info {
-  background-color: #4dbec6;
-  border-color: #4d6a79;
-  color: #f6f6f6;
+.prices-box {
+  height: 250px;
+  max-width: 250px;
+  margin: auto;
+  padding: 0;
 }
-.btn-info:hover {
-  background-color: #138496;
-  border-color: #138496;
-  color: #f6f6f6;
+
+.prices-bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .dim-overlay {
@@ -214,6 +203,17 @@ p a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.btn-info {
+  background-color: #4dbec6;
+  border-color: #4d6a79;
+  color: #f6f6f6;
+}
+.btn-info:hover {
+  background-color: #138496;
+  border-color: #138496;
+  color: #f6f6f6;
 }
 
 .shadow-box {
@@ -432,7 +432,7 @@ p a {
     background-image: url(../images/map_small_desktop.png);
   }
 
-  #pricesSection > div {
+  .prices-box {
     height: 450px;
     margin: 0 5px;
   }
@@ -456,7 +456,7 @@ p a {
     background-image: url(../images/map_desktop.png);
   }
 
-  #pricesSection > div {
+  .prices-box {
     height: 450px;
     margin: 0 5px;
   }

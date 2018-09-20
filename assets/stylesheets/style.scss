@@ -135,7 +135,6 @@ p a {
 /* Page specific IDs */
 /* Services */
 #pricesSection {
-    padding: 50px 0;
     h1, h2, h3, h4, h5, h6, p, div, a {
         color: $white;
     }
@@ -143,15 +142,6 @@ p a {
         h1, h2, h3, h4, h5, h6 {
             color: $primary;
         }
-    }
-    &> div {
-        // mobile first bootstrap columns
-        height: 250px;
-        max-width: 250px;
-        margin: auto;
-        padding: 0;
-        @include coverBackground();
-        text-align: center;
     }
 }
 /* Gallery */
@@ -190,15 +180,14 @@ p a {
 }
 
 /*** Classes ***/
-.btn-info {
-    background-color: $primary;
-    border-color: $secondary;
-    color: $light-grey;
-    &:hover {
-        background-color: $primary-dark;
-        border-color: $primary-dark;
-        color: $light-grey;
-    }
+.prices-box {
+    height: 250px;
+    max-width: 250px;
+    margin: auto;
+    padding: 0;
+}
+.prices-bg-image {
+    @include coverBackground();
 }
 .dim-overlay {
     height: 100%;
@@ -208,7 +197,17 @@ p a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
+}
+.btn-info {
+    background-color: $primary;
+    border-color: $secondary;
+    color: $light-grey;
+    &:hover {
+        background-color: $primary-dark;
+        border-color: $primary-dark;
+        color: $light-grey;
+    }
 }
 .shadow-box {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
@@ -414,11 +413,9 @@ p a {
         height: 600px;
         background-image: url(../images/map_small_desktop.png);
     }
-    #pricesSection {
-        &> div {
-            height: 450px;
-            margin: 0 5px;
-        }
+    .prices-box {
+        height: 450px;
+        margin: 0 5px;
     }
     .bg-image {
         height: 400px;
@@ -437,11 +434,9 @@ p a {
         height: 700px;
         background-image: url(../images/map_desktop.png);
     }
-    #pricesSection {
-        &> div {
-            height: 450px;
-            margin: 0 5px;
-        }
+    .prices-box {
+        height: 450px;
+        margin: 0 5px;
     }
     .bg-image {
         height: 500px;
