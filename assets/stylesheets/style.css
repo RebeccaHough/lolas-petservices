@@ -27,10 +27,6 @@ a:hover {
   color: #4d6a79;
 }
 
-p a {
-  color: #4a4a4a;
-}
-
 /*** IDs ***/
 /* General */
 #mainNavFlexWrapper {
@@ -76,7 +72,7 @@ p a {
   color: #f6f6f6;
 }
 #mainNav .active > .nav-link, #mainNav .nav-item:hover > .nav-link {
-  color: #138496;
+  color: #4a4a4a;
 }
 #mainNav .navbar-brand {
   padding: 1rem 0.25rem;
@@ -136,6 +132,10 @@ p a {
 }
 
 /* Page specific IDs */
+#ourServices {
+  padding-bottom: 20px;
+}
+
 /* Services */
 #pricesSection h1, #pricesSection h2, #pricesSection h3, #pricesSection h4, #pricesSection h5, #pricesSection h6, #pricesSection p, #pricesSection div, #pricesSection a {
   color: #ffffff;
@@ -144,7 +144,30 @@ p a {
   color: #4dbec6;
 }
 
+#bookingSection {
+  padding: 15px;
+  border-radius: 0.3rem;
+  background-color: #4dbec6;
+}
+#bookingSection .row {
+  text-align: center;
+}
+#bookingSection a {
+  color: #f6f6f6;
+  font-size: 1.4rem;
+}
+#bookingSection a:hover {
+  color: #138496;
+}
+#bookingSection span {
+  color: #138496;
+}
+
 /* Gallery */
+#instagramFeed {
+  margin-top: 40px;
+  padding: 0 20%;
+}
 #instagramFeed .insta-img a:focus {
   outline: none;
 }
@@ -155,6 +178,10 @@ p a {
   opacity: 0.8;
   -moz-opacity: 0.8;
   -webkit-opacity: 0.8;
+}
+
+#followUs h1 span {
+  color: #4dbec6;
 }
 
 /* Location */
@@ -193,6 +220,11 @@ p a {
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+}
+
+.logoFont {
+  font-family: "Amarillo", "Comic Sans MS", cursive, sans-serif;
+  color: #4dbec6;
 }
 
 .dim-overlay {
@@ -319,7 +351,7 @@ p a {
 }
 
 .text-container {
-  padding: 60px 0px;
+  padding: 40px 0px;
 }
 
 .bg-grey {
@@ -399,10 +431,6 @@ p a {
     border-top: 0px solid transparent;
     margin-top: 0px;
   }
-
-  #instagramFeed {
-    padding: 0 20%;
-  }
 }
 @media only screen and (max-width: 460px) {
   .quote-container {
@@ -418,6 +446,11 @@ p a {
   }
   .circle-container .row > div {
     padding: 0 15px 0 15px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #instagramFeed {
+    padding: 0;
   }
 }
 /* Small desktop */

@@ -25,9 +25,6 @@ a {
         color: $secondary;
     }
 }
-p a {
-    color: $dark-grey;
-}
 
 /*** IDs ***/
 /* General */
@@ -73,7 +70,7 @@ p a {
         color: $light-grey;
     }
     .active > .nav-link, .nav-item:hover > .nav-link {
-        color: $primary-dark;
+        color: $dark-grey;
     }
     .navbar-brand {
         padding: 1rem .25rem;
@@ -133,6 +130,9 @@ p a {
     }
 }
 /* Page specific IDs */
+#ourServices {
+    padding-bottom: 20px;
+}
 /* Services */
 #pricesSection {
     h1, h2, h3, h4, h5, h6, p, div, a {
@@ -144,8 +144,28 @@ p a {
         }
     }
 }
+#bookingSection {
+    padding: 15px;
+    border-radius: .3rem;
+    background-color: $primary;
+    .row { 
+        text-align: center;
+    }
+    a {
+        color: $light-grey;
+        font-size: 1.4rem;
+    }
+    a:hover {
+        color: $primary-dark;
+    }
+    span {
+        color: $primary-dark;
+    }
+}
 /* Gallery */
 #instagramFeed {
+    margin-top: 40px;
+    padding: 0 20%;
     .insta-img {
         a:focus {
             outline: none;
@@ -159,6 +179,9 @@ p a {
             }
         }
     }
+}
+#followUs h1 span {
+    color: $primary;
 }
 /* Location */
 #googleMaps {
@@ -188,6 +211,9 @@ p a {
 }
 .prices-bg-image {
     @include coverBackground();
+.logoFont {
+    font-family: $font-stack-script;
+    color: $primary;
 }
 .dim-overlay {
     height: 100%;
@@ -300,7 +326,7 @@ p a {
     }
 }
 .text-container {
-    padding: 60px 0px;
+    padding: 40px 0px;
 }
 .bg-grey {
     background-color: $light-grey;
@@ -381,9 +407,6 @@ p a {
         border-top: 0px solid transparent;
         margin-top: 0px;
     }
-    #instagramFeed {
-        padding: 0 20%;
-    }
 }
 @media only screen and (max-width: 460px) {
     .quote-container {
@@ -401,6 +424,11 @@ p a {
         .row > div {
             padding: 0 15px 0 15px;
         }
+    }
+}
+@media only screen and (min-width: 768px) {
+    #instagramFeed {
+        padding: 0;
     }
 }
 /* Small desktop */
