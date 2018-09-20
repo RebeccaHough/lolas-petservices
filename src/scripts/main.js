@@ -124,9 +124,10 @@ $('document').ready(function() {
                     <a 
                         target="_blank"
                         href="{{image}}" 
-                        title="
+                        title="{{caption}}"
+                        data-style="
                             <p style='padding-right: 10px; margin-bottom: 0'>
-                             {{caption}}
+                                {{caption}}
                             </p>
                             <a href='{{link}}' style='float: right'>
                                 View on Instagram &nbsp;<span class='fas fa-external-link-alt fa-sm'></span>&nbsp;&nbsp;
@@ -150,6 +151,9 @@ $('document').ready(function() {
             delegate: 'a',
             gallery: {
                 enabled: true
+            },
+            image: {
+                titleSrc: 'data-style'
             }
         });
     }
