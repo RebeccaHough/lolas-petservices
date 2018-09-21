@@ -36,7 +36,8 @@ a {
     > .navbar-nav {
         display: flex;
         flex: 2;
-        &.left {
+        align-items: center;
+        &.right {
             justify-content: flex-end;
         }
     }
@@ -121,6 +122,9 @@ a {
             flex: 1 1 0%;
         }
     }
+    #serviceAreaList {
+        min-width: 133px;
+    }
     #footerLinks {
         font-size: 1.15rem
     }
@@ -130,7 +134,12 @@ a {
     }
 }
 /* Page specific IDs */
-#ourServices {
+#servicesShortDesc a:hover img {
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    -webkit-opacity: 0.7;
+}
+#ourServicesTitle {
     padding-bottom: 20px;
 }
 /* Services */
@@ -192,7 +201,7 @@ a {
 #followUs h1 span {
     color: $primary;
 }
-/* Location */
+/* Contact */
 #googleMaps {
     height: 60vh;
     padding: 0;
@@ -378,6 +387,14 @@ a {
     -moz-background-clip: padding;
     background-clip: padding-box;
 }
+.customer-img {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+}
+.mobile-only {
+    display: block;
+}
 
 /*** Media Queries ***/
 // Bootstrap width resizes: 768px, 991px, 1200px
@@ -399,10 +416,10 @@ a {
             display: block !important;
             padding-bottom: 10px;
         } 
-        #mainNavFlexWrapper > div {
-            display: block !important;
-        }
         // End remove
+        #mainNavFlexWrapper .navbar-nav {
+            align-items: baseline;
+        }
     }
     .jump-link-fix {
         border-top: 0px solid transparent;
@@ -433,11 +450,15 @@ a {
     }
 }
 /* Small desktop */
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
-    .divider {
-        width: 70%;
-        margin: 5px auto;
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+    #mainNavFlexWrapper .width-fix {
+        max-width: 120px;
     }
+    .mobile-only {
+        display: none;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
     #locationMap {
         height: 600px;
         background-image: url(../images/map_small_desktop.png);
@@ -448,6 +469,10 @@ a {
             margin: 0 5px;
         }
     }
+    .divider {
+        width: 70%;
+        margin: 5px auto;
+    }
     .bg-image {
         height: 400px;
         &.kristie {
@@ -457,10 +482,6 @@ a {
 }
 /* Large desktop */
 @media only screen and (min-width: 1200px) {
-    .divider {
-        width: 55%;
-        margin: 5px auto;
-    }
     #locationMap {
         height: 700px;
         background-image: url(../images/map_desktop.png);
@@ -471,10 +492,17 @@ a {
             margin: 0 5px;
         }
     }
+    .divider {
+        width: 55%;
+        margin: 5px auto;
+    }
     .bg-image {
         height: 500px;
         &.kristie {
             height: 650px;
         }
+    }
+    .mobile-only {
+        display: none;
     }
 }

@@ -97,8 +97,8 @@ $('document').ready(function() {
         var imgCount = 0;
         var feed = new Instafeed({
             get: 'user',
-            userId: '8383337896',
-            accessToken: '8383337896.1677ed0.0afd711d80ef49f7950ea697b2843e11',
+            userId: '41950922',
+            accessToken: '41950922.1677ed0.6e415b2687a64b638995115206424129',
             target: 'instagramFeed',
             sortBy: 'most-recent',
             resolution: 'standard_resolution',
