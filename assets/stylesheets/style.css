@@ -141,6 +141,7 @@ a:hover {
   -moz-opacity: 0.7;
   -webkit-opacity: 0.7;
 }
+
 #ourServicesTitle {
   padding-bottom: 20px;
 }
@@ -412,18 +413,23 @@ a:hover {
   -moz-background-clip: padding;
   background-clip: padding-box;
 }
+
 .customer-img {
   display: block;
   width: 40%;
   margin: 0 auto;
 }
+
 .mobile-only {
   display: block;
 }
+
 .prices-small-print {
   font-size: 0.8rem;
+  font-style: italic;
   margin-top: 0.8rem;
 }
+
 /*** Media Queries ***/
 /* Mobile */
 @media only screen and (max-width: 991px) {
@@ -446,6 +452,7 @@ a:hover {
   #mainNav #mainNavFlexWrapper .navbar-nav {
     align-items: baseline;
   }
+
   .jump-link-fix {
     border-top: 0px solid transparent;
     margin-top: 0px;
@@ -483,11 +490,6 @@ a:hover {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-  .divider {
-    width: 70%;
-    margin: 5px auto;
-  }
-
   #locationMap {
     height: 600px;
     background-image: url(../images/map_small_desktop.png);
@@ -496,6 +498,11 @@ a:hover {
   .prices-box {
     height: 450px;
     margin: 0 5px;
+  }
+
+  .divider {
+    width: 70%;
+    margin: 5px auto;
   }
 
   .bg-image {
@@ -507,11 +514,6 @@ a:hover {
 }
 /* Large desktop */
 @media only screen and (min-width: 1200px) {
-  .divider {
-    width: 55%;
-    margin: 5px auto;
-  }
-
   #locationMap {
     height: 700px;
     background-image: url(../images/map_desktop.png);
@@ -521,9 +523,10 @@ a:hover {
     height: 450px;
     margin: 0 5px;
   }
-  
-  .mobile-only {
-    display: none;
+
+  .divider {
+    width: 55%;
+    margin: 5px auto;
   }
 
   .bg-image {
@@ -531,6 +534,10 @@ a:hover {
   }
   .bg-image.kristie {
     height: 650px;
+  }
+
+  .mobile-only {
+    display: none;
   }
 }
 

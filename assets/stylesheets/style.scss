@@ -220,6 +220,7 @@ a {
 }
 .prices-bg-image {
     @include coverBackground();
+}
 .logoFont {
     font-family: $font-stack-script;
     color: $primary;
@@ -396,6 +397,7 @@ a {
 }
 .prices-small-print {
     font-size: 0.8rem;
+    font-style: italic;
     margin-top: 0.8rem;
 }
 
