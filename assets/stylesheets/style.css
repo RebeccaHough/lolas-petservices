@@ -10,12 +10,12 @@
 /*** Elements ***/
 body {
   font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
-  color: #4a4a4a;
+  color: #928c8c;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Century Gothic", "CenturyGothic", "AppleGothic", sans-serif;
-  color: #4a4a4a;
+  color: #928c8c;
 }
 
 a {
@@ -38,8 +38,9 @@ a:hover {
 #mainNavFlexWrapper > .navbar-nav {
   display: flex;
   flex: 2;
+  align-items: center;
 }
-#mainNavFlexWrapper > .navbar-nav.left {
+#mainNavFlexWrapper > .navbar-nav.right {
   justify-content: flex-end;
 }
 #mainNavFlexWrapper > .navbar-brand {
@@ -72,7 +73,7 @@ a:hover {
   color: #f6f6f6;
 }
 #mainNav .active > .nav-link, #mainNav .nav-item:hover > .nav-link {
-  color: #4a4a4a;
+  color: #928c8c;
 }
 #mainNav .navbar-brand {
   padding: 1rem 0.25rem;
@@ -97,7 +98,7 @@ a:hover {
 }
 #mainNav .dropdown-item:hover {
   background-color: #4dbec6;
-  color: #4a4a4a;
+  color: #928c8c;
 }
 
 #footer {
@@ -123,6 +124,9 @@ a:hover {
 #footer .footer-text.f-grow-1 {
   flex: 1 1 0%;
 }
+#footer #serviceAreaList {
+  min-width: 133px;
+}
 #footer #footerLinks {
   font-size: 1.15rem;
 }
@@ -132,7 +136,12 @@ a:hover {
 }
 
 /* Page specific IDs */
-#ourServices {
+#servicesShortDesc a:hover img {
+  opacity: 0.7;
+  -moz-opacity: 0.7;
+  -webkit-opacity: 0.7;
+}
+#ourServicesTitle {
   padding-bottom: 20px;
 }
 
@@ -184,7 +193,7 @@ a:hover {
   color: #4dbec6;
 }
 
-/* Location */
+/* Contact */
 #googleMaps {
   height: 60vh;
   padding: 0;
@@ -403,7 +412,18 @@ a:hover {
   -moz-background-clip: padding;
   background-clip: padding-box;
 }
-
+.customer-img {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+.mobile-only {
+  display: block;
+}
+.prices-small-print {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
 /*** Media Queries ***/
 /* Mobile */
 @media only screen and (max-width: 991px) {
@@ -423,10 +443,9 @@ a:hover {
     display: block !important;
     padding-bottom: 10px;
   }
-  #mainNav #mainNavFlexWrapper > div {
-    display: block !important;
+  #mainNav #mainNavFlexWrapper .navbar-nav {
+    align-items: baseline;
   }
-
   .jump-link-fix {
     border-top: 0px solid transparent;
     margin-top: 0px;
@@ -454,6 +473,15 @@ a:hover {
   }
 }
 /* Small desktop */
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  #mainNavFlexWrapper .width-fix {
+    max-width: 120px;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .divider {
     width: 70%;
@@ -492,6 +520,10 @@ a:hover {
   .prices-box {
     height: 450px;
     margin: 0 5px;
+  }
+  
+  .mobile-only {
+    display: none;
   }
 
   .bg-image {
