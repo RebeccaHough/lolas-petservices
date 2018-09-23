@@ -451,7 +451,7 @@ a:hover {
 
 .customer-img {
   display: block;
-  width: 40%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -517,12 +517,12 @@ a:hover {
     margin-bottom: 20%;
   }
 }
-/* Small desktop */
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-  #mainNavFlexWrapper .width-fix {
-    max-width: 120px;
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .customer-img {
+    width: 60%;
   }
 }
+/* Small desktop */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   #locationMap {
     height: 600px;
@@ -544,6 +544,15 @@ a:hover {
   }
   .bg-image.kristie {
     height: 500px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  #mainNavFlexWrapper .width-fix {
+    max-width: 120px;
+  }
+
+  .customer-img {
+    width: 45%;
   }
 }
 /* Large desktop */
@@ -568,6 +577,10 @@ a:hover {
   }
   .bg-image.kristie {
     height: 650px;
+  }
+
+  .customer-img {
+    width: 40%;
   }
 }
 
