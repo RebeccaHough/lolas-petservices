@@ -258,6 +258,9 @@ a {
 .prices-bg-image {
     @include coverBackground();
 }
+.prices-list > li:not(.prices-small-print) {
+    color: $primary;
+}
 .logo-font {
     font-family: $font-stack-script;
     color: $primary;

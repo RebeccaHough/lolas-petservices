@@ -262,6 +262,10 @@ a:hover {
   overflow: hidden;
 }
 
+.prices-list > li:not(.prices-small-print) {
+  color: #4dbec6;
+}
+
 .logo-font {
   font-family: "Amarillo", "Comic Sans MS", cursive, sans-serif;
   color: #4dbec6;
