@@ -134,6 +134,7 @@ a {
     }
 }
 /* Page specific IDs */
+/* Index */
 #servicesShortDesc {
     h2, h3, h4, h5, h6 {
         text-align: center;
@@ -228,9 +229,6 @@ a {
         }
     }
 }
-#followUs h1 span {
-    color: $primary;
-}
 /* Contact */
 #googleMaps {
     height: 60vh;
@@ -260,8 +258,11 @@ a {
 .prices-bg-image {
     @include coverBackground();
 }
-.logoFont {
+.logo-font {
     font-family: $font-stack-script;
+    color: $primary;
+}
+.logo-font-colour {
     color: $primary;
 }
 .dim-overlay {

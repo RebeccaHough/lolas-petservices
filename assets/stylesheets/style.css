@@ -136,6 +136,7 @@ a:hover {
 }
 
 /* Page specific IDs */
+/* Index */
 #servicesShortDesc h2, #servicesShortDesc h3, #servicesShortDesc h4, #servicesShortDesc h5, #servicesShortDesc h6 {
   text-align: center;
 }
@@ -223,10 +224,6 @@ a:hover {
   -webkit-opacity: 0.8;
 }
 
-#followUs h1 span {
-  color: #4dbec6;
-}
-
 /* Contact */
 #googleMaps {
   height: 60vh;
@@ -265,8 +262,12 @@ a:hover {
   overflow: hidden;
 }
 
-.logoFont {
+.logo-font {
   font-family: "Amarillo", "Comic Sans MS", cursive, sans-serif;
+  color: #4dbec6;
+}
+
+.logo-font-colour {
   color: #4dbec6;
 }
 
