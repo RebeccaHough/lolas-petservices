@@ -413,9 +413,6 @@ a {
     width: 40%;
     margin: 0 auto;
 }
-.mobile-only {
-    display: block;
-}
 .prices-small-print {
     font-size: 0.8rem;
     font-style: italic;
@@ -490,9 +487,6 @@ a {
     #mainNavFlexWrapper .width-fix {
         max-width: 120px;
     }
-    .mobile-only {
-        display: none;
-    }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     #locationMap {
@@ -533,8 +527,5 @@ a {
         &.kristie {
             height: 650px;
         }
-    }
-    .mobile-only {
-        display: none;
     }
 }
