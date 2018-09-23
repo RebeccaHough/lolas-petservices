@@ -136,10 +136,16 @@ a:hover {
 }
 
 /* Page specific IDs */
+#servicesShortDesc h2, #servicesShortDesc h3, #servicesShortDesc h4, #servicesShortDesc h5, #servicesShortDesc h6 {
+  text-align: center;
+}
 #servicesShortDesc a:hover img {
   opacity: 0.7;
   -moz-opacity: 0.7;
   -webkit-opacity: 0.7;
+}
+#servicesShortDesc a:hover h1, #servicesShortDesc a:hover h2, #servicesShortDesc a:hover h3, #servicesShortDesc a:hover h4, #servicesShortDesc a:hover h5, #servicesShortDesc a:hover h6 {
+  color: #4dbec6;
 }
 
 #ourServicesTitle {
