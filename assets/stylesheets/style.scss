@@ -431,7 +431,7 @@ a {
 }
 .customer-img {
     display: block;
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
 }
 .prices-small-print {
@@ -503,12 +503,12 @@ a {
         }
     }
 }
-/* Small desktop */
-@media only screen and (min-width: 991px) and (max-width: 1200px) {
-    #mainNavFlexWrapper .width-fix {
-        max-width: 120px;
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .customer-img {
+        width: 60%;
     }
 }
+/* Small desktop */
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
     #locationMap {
         height: 600px;
@@ -527,6 +527,14 @@ a {
         &.kristie {
             height: 500px;
         }
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    #mainNavFlexWrapper .width-fix {
+        max-width: 120px;
+    }
+    .customer-img {
+        width: 45%;
     }
 }
 /* Large desktop */
@@ -548,5 +556,8 @@ a {
         &.kristie {
             height: 650px;
         }
+    }
+    .customer-img {
+        width: 40%;
     }
 }
