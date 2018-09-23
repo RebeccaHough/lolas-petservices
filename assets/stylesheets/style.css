@@ -70,10 +70,12 @@ a:hover {
 #mainNav .nav-link:not(.navbar-brand) {
   padding: 0.75rem;
   text-transform: uppercase;
+}
+#mainNav .nav-link:not(.navbar-brand), #mainNav .dropdown-item {
   color: #f6f6f6;
 }
-#mainNav .active > .nav-link, #mainNav .nav-item:hover > .nav-link {
-  color: #928c8c;
+#mainNav .active > .nav-link, #mainNav .nav-item:hover > .nav-link, #mainNav .dropdown-item:hover {
+  color: #427279;
 }
 #mainNav .navbar-brand {
   padding: 1rem 0.25rem;
@@ -92,13 +94,11 @@ a:hover {
   border-radius: 0%;
 }
 #mainNav .dropdown-item {
-  color: #f6f6f6;
   margin-top: 0.25rem;
   padding-bottom: 6px;
 }
 #mainNav .dropdown-item:hover {
   background-color: #4dbec6;
-  color: #928c8c;
 }
 
 #footer {
@@ -202,6 +202,9 @@ a:hover {
 #bookingSection span {
   color: #138496;
 }
+#bookingSection h1 {
+  color: #427279;
+}
 
 /* Gallery */
 #instagramFeed {
@@ -289,7 +292,7 @@ a:hover {
 }
 
 .drop-shadow {
-  filter: drop-shadow(0 1mm 0.3rem #a7a7a7);
+  filter: drop-shadow(0 1mm 0.3rem #928c8c);
 }
 
 .bg-image {
@@ -318,7 +321,7 @@ a:hover {
 .dot {
   height: 0.75rem;
   width: 0.75rem;
-  background-color: #a7a7a7;
+  background-color: #928c8c;
   border-radius: 50%;
   display: inline-block;
   margin-left: 0.25rem;
@@ -404,7 +407,7 @@ a:hover {
   text-align: center;
 }
 .divider:before, .divider:after {
-  background-color: #a7a7a7;
+  background-color: #928c8c;
   content: "";
   display: inline-block;
   height: 1px;

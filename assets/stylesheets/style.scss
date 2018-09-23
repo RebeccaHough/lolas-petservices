@@ -11,11 +11,11 @@
 /*** Elements ***/
 body {
     font-family: $font-stack-body;
-    color: $dark-grey;
+    color: $grey;
 }
 h1, h2, h3, h4, h5, h6, {
     font-family: $font-stack-title;
-    color: $dark-grey;
+    color: $grey;
 }
 a {
     text-decoration: none !important;
@@ -68,10 +68,12 @@ a {
     .nav-link:not(.navbar-brand) {
         padding: .75rem;
         text-transform: uppercase;
+    }
+    .nav-link:not(.navbar-brand), .dropdown-item {
         color: $light-grey;
     }
-    .active > .nav-link, .nav-item:hover > .nav-link {
-        color: $dark-grey;
+    .active > .nav-link, .nav-item:hover > .nav-link, .dropdown-item:hover  {
+        color: $primary-muted;
     }
     .navbar-brand {
         padding: 1rem .25rem;
@@ -90,13 +92,11 @@ a {
         border-radius: 0%;
     }
     .dropdown-item {
-        color: $light-grey;
         margin-top: .25rem;
         padding-bottom: 6px;
     }
    .dropdown-item:hover {
         background-color: $primary;
-        color: $dark-grey;
     }
 }
 #footer {
@@ -205,6 +205,9 @@ a {
     }
     span {
         color: $primary-dark;
+    }
+    h1 {
+        color: $primary-muted;
     }
 }
 /* Gallery */
