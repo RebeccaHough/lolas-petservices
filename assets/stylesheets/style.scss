@@ -159,10 +159,21 @@ a {
     background-color: $primary;
     .row { 
         text-align: center;
+        &> div {
+            //columns
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
     a {
+        margin: 5px;
         color: $light-grey;
         font-size: 1.4rem;
+        //fail safe for if email is too long
+        width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
     a:hover {
         color: $primary-dark;

@@ -162,9 +162,18 @@ a:hover {
 #bookingSection .row {
   text-align: center;
 }
+#bookingSection .row > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #bookingSection a {
+  margin: 5px;
   color: #f6f6f6;
   font-size: 1.4rem;
+  width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 #bookingSection a:hover {
   color: #138496;
