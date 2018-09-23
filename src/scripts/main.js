@@ -14,9 +14,6 @@ $('document').ready(function() {
     /**
      * Choose how to open dropdown menus with class '.dropdown-link', depending on screen size
      */
-    //&& $('.dropdown-link').attr('href') != ''
-    //https://github.com/DataTables/VisualEvent
-    //https://stackoverflow.com/questions/446892/how-to-find-event-listeners-on-a-dom-node-when-debugging-or-from-the-javascript
     function setupDropdown() {
         //if mobile menu is showing
         if($('#mainNavToggler').css('display') != 'none') {
@@ -90,12 +87,6 @@ $('document').ready(function() {
         });
     }
 
-    //parallax scroll header
-    // $('.my-parallax-window').parallax({
-    //     speed: -0.2,
-    //     imageSrc: '../assets/images/lola_beach.jpg'
-    // });
-
     /* Instagram feed (won't work from 2020+) */
     // If element #instagramFeed exists
     if($('#instagramFeed').length) {
@@ -162,28 +153,4 @@ $('document').ready(function() {
             }
         });
     }
-
-
-    /*
-    Instagram feed pagination
-
-    var loadButton = document.getElementById('load-more');
-    var feed = new Instafeed({
-        // every time we load more, run this function
-        after: function() {
-            // disable button if no more results to load
-            if (!this.hasNext()) {
-                loadButton.setAttribute('disabled', 'disabled');
-            }
-        },
-    });
-
-    // bind the load more button
-    loadButton.addEventListener('click', function() {
-        feed.next();
-    });
-
-    // run our feed!
-    feed.run();
-    */
 });
