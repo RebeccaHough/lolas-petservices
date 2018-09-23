@@ -129,6 +129,7 @@ a:hover {
 }
 #footer #footerLinks {
   font-size: 1.15rem;
+  text-align: center;
 }
 #footer #footerCopyright {
   font-size: 0.8rem;
