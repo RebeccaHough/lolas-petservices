@@ -149,9 +149,24 @@ a:hover {
 /* Services */
 #pricesSection h1, #pricesSection h2, #pricesSection h3, #pricesSection h4, #pricesSection h5, #pricesSection h6, #pricesSection p, #pricesSection div, #pricesSection a {
   color: #ffffff;
+  text-align: center;
 }
 #pricesSection a:hover h1, #pricesSection a:hover h2, #pricesSection a:hover h3, #pricesSection a:hover h4, #pricesSection a:hover h5, #pricesSection a:hover h6 {
   color: #4dbec6;
+}
+#pricesSection .content-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#pricesSection .content-layout .top-item {
+  margin-top: 10%;
+  margin-bottom: auto;
+}
+#pricesSection .content-layout .bottom-item {
+  margin-top: auto;
+  margin-bottom: 10%;
 }
 
 #bookingSection {
@@ -250,10 +265,6 @@ a:hover {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .btn-info {
@@ -486,6 +497,13 @@ a:hover {
 @media only screen and (min-width: 768px) {
   #instagramFeed {
     padding: 0;
+  }
+
+  #pricesSection .content-layout .top-item {
+    margin-top: 20%;
+  }
+  #pricesSection .content-layout .bottom-item {
+    margin-bottom: 20%;
   }
 }
 /* Small desktop */

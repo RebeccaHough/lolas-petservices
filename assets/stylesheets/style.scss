@@ -146,10 +146,25 @@ a {
 #pricesSection {
     h1, h2, h3, h4, h5, h6, p, div, a {
         color: $white;
+        text-align: center;
     }
     a:hover {
         h1, h2, h3, h4, h5, h6 {
             color: $primary;
+        }
+    }
+    .content-layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .top-item {
+            margin-top: 10%;
+            margin-bottom: auto;
+        }
+        .bottom-item {
+            margin-top: auto;
+            margin-bottom: 10%;
         }
     }
 }
@@ -240,11 +255,6 @@ a {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 .btn-info {
     background-color: $primary;
@@ -463,6 +473,16 @@ a {
 @media only screen and (min-width: 768px) {
     #instagramFeed {
         padding: 0;
+    }
+    #pricesSection {
+        .content-layout {
+            .top-item {
+                margin-top: 20%;
+            }
+            .bottom-item {
+                margin-bottom: 20%;
+            }
+        }
     }
 }
 /* Small desktop */
