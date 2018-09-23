@@ -14,35 +14,25 @@ $('document').ready(function() {
     /**
      * Choose how to open dropdown menus with class '.dropdown-link', depending on screen size
      */
+    //&& $('.dropdown-link').attr('href') != ''
+    //https://github.com/DataTables/VisualEvent
+    //https://stackoverflow.com/questions/446892/how-to-find-event-listeners-on-a-dom-node-when-debugging-or-from-the-javascript
     function setupDropdown() {
-        //if mobile menu is showing and .dropdown-link is set
-        if($('#mainNavToggler').css('display') != 'none' && $('.dropdown-link').attr('href') != '') {
+        //if mobile menu is showing
+        if($('#mainNavToggler').css('display') != 'none') {
             //disable link to 'services.html'
             $('.dropdown-link').removeAttr('href');
             $('.dropdown-link').css('cursor', 'pointer');
             //set dropdown to open on click
             addDropdownClickEventHandler();
-        } else if($('.dropdown-link').attr('href') != 'services.html') {
+        } else {
             //enable link to 'services.html'
             $('.dropdown-link').attr('href', 'services.html');
             //remove inline styling (set 'cursor' back to default)
             $('.dropdown-link').removeAttr('style');
             //set dropdown to open on hover
             addDropdownHoverEventHandler();
-        } else {
-            addDropdownHoverEventHandler();
         }
-    }
-
-    /**
-     * Remove dropdown click event handler and add dropdown hover event handler
-     */ 
-    function addDropdownHoverEventHandler() {
-        //if dropdown on click exists, remove it
-        $('body').off('click', '.dropdown', dropdownClickEventHandler);
-
-        //make dropdown open on hover
-        $('body').on('mouseenter mouseleave', '.dropdown', dropdownHoverEventHandler);
     }
 
     /**
@@ -51,23 +41,24 @@ $('document').ready(function() {
     function addDropdownClickEventHandler() {
         //if dropdown on hover exists, remove it
         $('body').off('mouseenter mouseleave', '.dropdown', dropdownHoverEventHandler);
+        //if dropdown on click already exists, remove it
+        $('body').off('click', '.dropdown', dropdownClickEventHandler);
 
         //make dropdown open on click
         $('body').on('click', '.dropdown', dropdownClickEventHandler);
     }
 
     /**
-     * Dropdown hover event handler function
-     */
-    function dropdownHoverEventHandler(e) {
-        var dropdown = $(e.target).closest('.dropdown');
-        var menu = $('.dropdown-menu', dropdown);
-        dropdown.addClass('show');
-        menu.addClass('show');
-        setTimeout(function () {
-            dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
-            menu[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
-        });
+     * Remove dropdown click event handler and add dropdown hover event handler
+     */ 
+    function addDropdownHoverEventHandler() {
+        //if dropdown on click exists, remove it
+        $('body').off('click', '.dropdown', dropdownClickEventHandler);
+        //if dropdown on hover already exists, remove it
+        $('body').off('mouseenter mouseleave', '.dropdown', dropdownHoverEventHandler);
+
+        //make dropdown open on hover
+        $('body').on('mouseenter mouseleave', '.dropdown', dropdownHoverEventHandler);
     }
 
     /**
@@ -83,6 +74,20 @@ $('document').ready(function() {
             dropdown.addClass('show');
             menu.addClass('show');
         }
+    }
+
+    /**
+     * Dropdown hover event handler function
+     */
+    function dropdownHoverEventHandler(e) {
+        var dropdown = $(e.target).closest('.dropdown');
+        var menu = $('.dropdown-menu', dropdown);
+        dropdown.addClass('show');
+        menu.addClass('show');
+        setTimeout(function () {
+            dropdown[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
+            menu[dropdown.is(':hover') ? 'addClass' : 'removeClass']('show');
+        });
     }
 
     //parallax scroll header
