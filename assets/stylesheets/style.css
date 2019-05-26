@@ -338,8 +338,12 @@ a:hover {
 }
 
 .circle-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+.circle-container .not-vertically-padded {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 .circle-container .row > div {
   padding: 1rem calc(1rem + 15px) 1rem calc(1rem + 15px);
@@ -499,15 +503,7 @@ a:hover {
   }
 }
 @media only screen and (min-width: 576px) {
-  .circle-container .right-padded {
-    padding-right: 18% !important;
-  }
-  .circle-container .left-padded {
-    padding-left: 18% !important;
-  }
-  .circle-container .row > div {
-    padding: 0 15px 0 15px;
-  }
+  
 }
 @media only screen and (min-width: 768px) {
   #instagramFeed {
@@ -519,6 +515,22 @@ a:hover {
   }
   #pricesSection .content-layout .bottom-item {
     margin-bottom: 20%;
+  }
+
+  .circle-container .vertical-padded-item-top {
+    padding-top: 16px !important;
+  }
+  .circle-container .vertical-padded-item-bottom {
+      padding-bottom: 16px !important;
+  }
+  .circle-container .right-padded {
+    padding-right: 14% !important;
+  }
+  .circle-container .left-padded {
+    padding-left: 14% !important;
+  }
+  .circle-container .row > div {
+    padding: 0 15px 0 15px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 992px) {
