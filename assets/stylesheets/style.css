@@ -502,9 +502,6 @@ a:hover {
     padding: 60px 2%;
   }
 }
-@media only screen and (min-width: 576px) {
-  
-}
 @media only screen and (min-width: 768px) {
   #instagramFeed {
     padding: 0;
@@ -521,7 +518,7 @@ a:hover {
     padding-top: 16px !important;
   }
   .circle-container .vertical-padded-item-bottom {
-      padding-bottom: 16px !important;
+    padding-bottom: 16px !important;
   }
   .circle-container .right-padded {
     padding-right: 14% !important;
