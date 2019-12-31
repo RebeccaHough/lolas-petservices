@@ -241,7 +241,7 @@ a:hover {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-image: url(../images/map_mobile.png);
+  background-image: url(../images/maps/map_mobile.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -340,10 +340,6 @@ a:hover {
 .circle-container {
   padding-top: 0;
   padding-bottom: 40px;
-}
-.circle-container .not-vertically-padded {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
 }
 .circle-container .row > div {
   padding: 1rem calc(1rem + 15px) 1rem calc(1rem + 15px);
@@ -514,18 +510,6 @@ a:hover {
     margin-bottom: 20%;
   }
 
-  .circle-container .vertical-padded-item-top {
-    padding-top: 16px !important;
-  }
-  .circle-container .vertical-padded-item-bottom {
-    padding-bottom: 16px !important;
-  }
-  .circle-container .right-padded {
-    padding-right: 14% !important;
-  }
-  .circle-container .left-padded {
-    padding-left: 14% !important;
-  }
   .circle-container .row > div {
     padding: 0 15px 0 15px;
   }
@@ -539,7 +523,7 @@ a:hover {
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   #locationMap {
     height: 600px;
-    background-image: url(../images/map_small_desktop.png);
+    background-image: url(../images/maps/map_small_desktop.png);
   }
 
   .prices-box {
@@ -572,7 +556,7 @@ a:hover {
 @media only screen and (min-width: 1200px) {
   #locationMap {
     height: 700px;
-    background-image: url(../images/map_desktop.png);
+    background-image: url(../images/maps/map_desktop.png);
   }
 
   .prices-box {
