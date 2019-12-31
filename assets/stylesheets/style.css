@@ -155,6 +155,10 @@ a:hover {
 }
 
 /* Services */
+#pricesSection {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 #pricesSection h1, #pricesSection h2, #pricesSection h3, #pricesSection h4, #pricesSection h5, #pricesSection h6, #pricesSection p, #pricesSection div, #pricesSection a {
   color: #ffffff;
   text-align: center;
@@ -250,13 +254,9 @@ a:hover {
 
 /*** Classes ***/
 .prices-box {
-  height: 350px;
-  max-width: 350px;
-  margin: auto;
+  height: 330px;
+  margin: 10px 0;
   padding: 0;
-}
-
-.prices-bg-image {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -498,16 +498,20 @@ a:hover {
     padding: 60px 2%;
   }
 }
+@media only screen and (max-width: 767px) {
+  #pricesSection {
+    max-width: none !important;
+    width: initial;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
 @media only screen and (min-width: 768px) {
   #instagramFeed {
     padding: 0;
-  }
-
-  #pricesSection .content-layout .top-item {
-    margin-top: 20%;
-  }
-  #pricesSection .content-layout .bottom-item {
-    margin-bottom: 20%;
   }
 
   .circle-container .row > div {

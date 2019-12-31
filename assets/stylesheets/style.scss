@@ -156,6 +156,8 @@ a {
 }
 /* Services */
 #pricesSection {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     h1, h2, h3, h4, h5, h6, p, div, a {
         color: $white;
         text-align: center;
@@ -251,12 +253,9 @@ a {
 
 /*** Classes ***/
 .prices-box {
-    height: 350px;
-    max-width: 350px;
-    margin: auto;
+    height: 330px;
+    margin: 10px 0;
     padding: 0;
-}
-.prices-bg-image {
     @include coverBackground();
 }
 .prices-list > li:not(.prices-small-print) {
@@ -478,19 +477,21 @@ a {
 @media only screen and (min-width: 576px) {
     
 }
+@media only screen and (max-width: 767px) {
+    //turn off services container
+    #pricesSection {
+        max-width: none !important;
+        width: initial;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+    }
+}
 @media only screen and (min-width: 768px) {
     #instagramFeed {
         padding: 0;
-    }
-    #pricesSection {
-        .content-layout {
-            .top-item {
-                margin-top: 20%;
-            }
-            .bottom-item {
-                margin-bottom: 20%;
-            }
-        }
     }
     .circle-container {
         .row > div {
