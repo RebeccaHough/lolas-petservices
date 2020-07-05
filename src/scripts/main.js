@@ -90,29 +90,37 @@ $('document').ready(function() {
     /* Instagram feed (won't work from 2020+) */
     // If element #instagramFeed exists
     if($('#instagramFeed').length) {
+        // Get instagram access token (refreshes every 60 days)
+        let accessTokenInsta = 'IGQVJVdzhCVEFIcXBKVTEyejFnWnpydmJtTjhSY1FLTWU5ZAmJuYWlKTmNob0FuS3NwaFgyc28wWW1Wd18ySl9FMWJDSXlkcXR4RHF2REIxb2pzbjdTTGRyRTRzUm9RaTB2WXFRTkJn';
+        
+        // TODO: Get instagram access token from: https://www.instant-tokens.com/instagram/authorisations
+        /*fetch('https://ig.instant-tokens.com/users/f7255527-d9d7-4220-b0e1-f85c132e4aeb/instagram/17841408216907916/token?userSecret=p4b480a8ukcjnuli9kgo', {mode: 'no-cors'})
+        .then(response => response.json())
+        .then(data => {
+            accessTokenInsta = data;
+            console.log(data);
+        })*/
+        
         var imgCount = 0;
         var feed = new Instafeed({
-            get: 'user',
-            userId: '41950922',
-            accessToken: '41950922.1677ed0.6e415b2687a64b638995115206424129',
+            //debug: true,
+            accessToken: accessTokenInsta,
             target: 'instagramFeed',
-            sortBy: 'most-recent',
-            resolution: 'standard_resolution',
-            links: true,
-            // Every 4 images it creates a row
-            filter: function(image) {
+            //sort: () => {},   // Function. Defaults to most recent
+            transform: function(image) {
+                // Every 4 images it creates a row
                 if (imgCount % 4 === 0 || imgCount === 0) {
-                    image.customTagOpen = '<div class="row">';
-                    image.customTagClose = '';
+                    image.model.customTagOpen = '<div class="row">';
+                    image.model.customTagClose = '';
                 } else if ((imgCount + 1) % 4 === 0) {
-                    image.customTagOpen = '';
-                    image.customTagClose = '</div>';
+                    image.model.customTagOpen = '';
+                    image.model.customTagClose = '</div>';
                 } else {
-                    image.customTagOpen = '';
-                    image.customTagClose = '';
+                    image.model.customTagOpen = '';
+                    image.model.customTagClose = '';
                 }
                 imgCount += 1;
-                return true;
+                return image;
             },
             template: `
                 {{model.customTagOpen}}
