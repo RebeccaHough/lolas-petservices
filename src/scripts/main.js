@@ -91,15 +91,27 @@ $('document').ready(function() {
     // If element #instagramFeed exists
     if($('#instagramFeed').length) {
         // Get instagram access token (refreshes every 60 days)
-        let accessTokenInsta = 'IGQVJVdzhCVEFIcXBKVTEyejFnWnpydmJtTjhSY1FLTWU5ZAmJuYWlKTmNob0FuS3NwaFgyc28wWW1Wd18ySl9FMWJDSXlkcXR4RHF2REIxb2pzbjdTTGRyRTRzUm9RaTB2WXFRTkJn';
+        let accessTokenInsta = //'';
+        'IGQVJXVFhQNGtQN2lKeC1SY29RTGlEcnZAzaGdLLXJyaU1nRVZAKZAG52ZAV9uZA3dVZA2ppTFZAKZAnlYVXQxZAlBwVFVScFhEMzBuSklyMXdHNlU4cnlJemIxQ0duZAEtBcnZADRFRFanBWRHBn';
         
         // TODO: Get instagram access token from: https://www.instant-tokens.com/instagram/authorisations
-        /*fetch('https://ig.instant-tokens.com/users/f7255527-d9d7-4220-b0e1-f85c132e4aeb/instagram/17841408216907916/token?userSecret=p4b480a8ukcjnuli9kgo', {mode: 'no-cors'})
+        /*fetch('https://ig.instant-tokens.com/users/f7255527-d9d7-4220-b0e1-f85c132e4aeb/instagram/17841400927660656/token?userSecret=p657qprubgnma6uo6rfmo', {mode: 'no-cors'})
         .then(response => response.json())
         .then(data => {
             accessTokenInsta = data;
             console.log(data);
         })*/
+
+        $.ajax({
+            type: 'get',
+            dataType: 'json',
+            url: 'https://ig.instant-tokens.com/users/f7255527-d9d7-4220-b0e1-f85c132e4aeb/instagram/17841400927660656/token?userSecret=p657qprubgnma6uo6rfmo',
+
+            success: function (response) {
+                console.log(response);
+                accessTokenInsta = response.Token;
+            }
+        });
         
         var imgCount = 0;
         var feed = new Instafeed({
